@@ -1,0 +1,25 @@
+[2.412s] Invoking command in '/home/mandy/Delivery-Bot/build/robot_description': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/mandy/Delivery-Bot/build/robot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mandy/Delivery-Bot/install/robot_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/mandy/Delivery-Bot/build/robot_description/build --no-deps symlink_data --force
+[3.508s] running develop
+[3.946s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:363: UserWarning: Unbuilt egg for pytest-repeat [unknown version] (/usr/lib/python3/dist-packages)
+[3.946s]   self.local_index = Environment(self.shadow_path + sys.path)
+[4.031s] running egg_info
+[4.077s] writing robot_description.egg-info/PKG-INFO
+[4.081s] writing dependency_links to robot_description.egg-info/dependency_links.txt
+[4.081s] writing requirements to robot_description.egg-info/requires.txt
+[4.082s] writing top-level names to robot_description.egg-info/top_level.txt
+[4.193s] reading manifest file 'robot_description.egg-info/SOURCES.txt'
+[4.202s] writing manifest file 'robot_description.egg-info/SOURCES.txt'
+[4.239s] running build_ext
+[4.250s] Creating /home/mandy/Delivery-Bot/install/robot_description/lib/python3.12/site-packages/robot-description.egg-link (link to .)
+[4.250s] 
+[4.251s] Installed /home/mandy/Delivery-Bot/build/robot_description
+[4.251s] running symlink_data
+[4.251s] symbolically linking /home/mandy/Delivery-Bot/build/robot_description/resource/robot_description -> /home/mandy/Delivery-Bot/install/robot_description/share/ament_index/resource_index/packages
+[4.251s] symbolically linking /home/mandy/Delivery-Bot/build/robot_description/package.xml -> /home/mandy/Delivery-Bot/install/robot_description/share/robot_description
+[4.251s] symbolically linking /home/mandy/Delivery-Bot/build/robot_description/description/robot_description.urdf -> /home/mandy/Delivery-Bot/install/robot_description/share/robot_description/description
+[4.251s] symbolically linking /home/mandy/Delivery-Bot/build/robot_description/description/robot_description.sdf -> /home/mandy/Delivery-Bot/install/robot_description/share/robot_description/description
+[4.251s] symbolically linking /home/mandy/Delivery-Bot/build/robot_description/launch/display.launch.py -> /home/mandy/Delivery-Bot/install/robot_description/share/robot_description/launch
+[4.251s] symbolically linking /home/mandy/Delivery-Bot/build/robot_description/meshes/body_v2.STL -> /home/mandy/Delivery-Bot/install/robot_description/share/robot_description/meshes
+[4.252s] symbolically linking /home/mandy/Delivery-Bot/build/robot_description/meshes/head_v1.STL -> /home/mandy/Delivery-Bot/install/robot_description/share/robot_description/meshes
+[4.252s] symbolically linking /home/mandy/Delivery-Bot/build/robot_description/rviz/config.rviz -> /home/mandy/Delivery-Bot/install/robot_description/share/robot_description/rviz
+[4.454s] Invoked command in '/home/mandy/Delivery-Bot/build/robot_description' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/mandy/Delivery-Bot/build/robot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mandy/Delivery-Bot/install/robot_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/mandy/Delivery-Bot/build/robot_description/build --no-deps symlink_data --force

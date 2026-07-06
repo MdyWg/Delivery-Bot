@@ -1,0 +1,42 @@
+[4.339s] Invoking command in '/home/mandy/Delivery-Bot/src/robot_description': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/mandy/Delivery-Bot/build/robot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mandy/Delivery-Bot/install/robot_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_description build --build-base /home/mandy/Delivery-Bot/build/robot_description/build install --record /home/mandy/Delivery-Bot/build/robot_description/install.log --single-version-externally-managed install_data
+[5.246s] running egg_info
+[5.249s] creating ../../build/robot_description/robot_description.egg-info
+[5.299s] writing ../../build/robot_description/robot_description.egg-info/PKG-INFO
+[5.305s] writing dependency_links to ../../build/robot_description/robot_description.egg-info/dependency_links.txt
+[5.309s] writing requirements to ../../build/robot_description/robot_description.egg-info/requires.txt
+[5.309s] writing top-level names to ../../build/robot_description/robot_description.egg-info/top_level.txt
+[5.312s] writing manifest file '../../build/robot_description/robot_description.egg-info/SOURCES.txt'
+[5.412s] reading manifest file '../../build/robot_description/robot_description.egg-info/SOURCES.txt'
+[5.414s] writing manifest file '../../build/robot_description/robot_description.egg-info/SOURCES.txt'
+[5.416s] running build
+[5.416s] running build_py
+[5.416s] creating /home/mandy/Delivery-Bot/build/robot_description/build
+[5.418s] creating /home/mandy/Delivery-Bot/build/robot_description/build/lib
+[5.418s] creating /home/mandy/Delivery-Bot/build/robot_description/build/lib/robot_description
+[5.418s] copying robot_description/__init__.py -> /home/mandy/Delivery-Bot/build/robot_description/build/lib/robot_description
+[5.418s] running install
+[5.435s] running install_lib
+[5.477s] creating /home/mandy/Delivery-Bot/install/robot_description/lib/python3.12/site-packages/robot_description
+[5.477s] copying /home/mandy/Delivery-Bot/build/robot_description/build/lib/robot_description/__init__.py -> /home/mandy/Delivery-Bot/install/robot_description/lib/python3.12/site-packages/robot_description
+[5.477s] byte-compiling /home/mandy/Delivery-Bot/install/robot_description/lib/python3.12/site-packages/robot_description/__init__.py to __init__.cpython-312.pyc
+[5.481s] running install_data
+[5.482s] creating /home/mandy/Delivery-Bot/install/robot_description/share/ament_index
+[5.482s] creating /home/mandy/Delivery-Bot/install/robot_description/share/ament_index/resource_index
+[5.482s] creating /home/mandy/Delivery-Bot/install/robot_description/share/ament_index/resource_index/packages
+[5.484s] copying resource/robot_description -> /home/mandy/Delivery-Bot/install/robot_description/share/ament_index/resource_index/packages
+[5.486s] copying package.xml -> /home/mandy/Delivery-Bot/install/robot_description/share/robot_description
+[5.487s] creating /home/mandy/Delivery-Bot/install/robot_description/share/robot_description/description
+[5.490s] copying description/robot_description.urdf -> /home/mandy/Delivery-Bot/install/robot_description/share/robot_description/description
+[5.490s] copying description/robot_description.sdf -> /home/mandy/Delivery-Bot/install/robot_description/share/robot_description/description
+[5.490s] creating /home/mandy/Delivery-Bot/install/robot_description/share/robot_description/launch
+[5.493s] copying launch/display.launch.py -> /home/mandy/Delivery-Bot/install/robot_description/share/robot_description/launch
+[5.498s] creating /home/mandy/Delivery-Bot/install/robot_description/share/robot_description/meshes
+[5.498s] copying meshes/body_v2.STL -> /home/mandy/Delivery-Bot/install/robot_description/share/robot_description/meshes
+[5.501s] copying meshes/head_v1.STL -> /home/mandy/Delivery-Bot/install/robot_description/share/robot_description/meshes
+[5.519s] creating /home/mandy/Delivery-Bot/install/robot_description/share/robot_description/rviz
+[5.523s] copying rviz/config.rviz -> /home/mandy/Delivery-Bot/install/robot_description/share/robot_description/rviz
+[5.524s] running install_egg_info
+[5.597s] Copying ../../build/robot_description/robot_description.egg-info to /home/mandy/Delivery-Bot/install/robot_description/lib/python3.12/site-packages/robot_description-0.0.0-py3.12.egg-info
+[5.599s] running install_scripts
+[6.019s] writing list of installed files to '/home/mandy/Delivery-Bot/build/robot_description/install.log'
+[6.090s] Invoked command in '/home/mandy/Delivery-Bot/src/robot_description' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/mandy/Delivery-Bot/build/robot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mandy/Delivery-Bot/install/robot_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_description build --build-base /home/mandy/Delivery-Bot/build/robot_description/build install --record /home/mandy/Delivery-Bot/build/robot_description/install.log --single-version-externally-managed install_data

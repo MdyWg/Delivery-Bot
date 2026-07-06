@@ -1,0 +1,20 @@
+[2.454s] Invoking command in '/home/mandy/Delivery-Bot/src/robot_description': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/mandy/Delivery-Bot/build/robot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mandy/Delivery-Bot/install/robot_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_description build --build-base /home/mandy/Delivery-Bot/build/robot_description/build install --record /home/mandy/Delivery-Bot/build/robot_description/install.log --single-version-externally-managed install_data
+[3.266s] running egg_info
+[3.387s] writing ../../build/robot_description/robot_description.egg-info/PKG-INFO
+[3.388s] writing dependency_links to ../../build/robot_description/robot_description.egg-info/dependency_links.txt
+[3.392s] writing requirements to ../../build/robot_description/robot_description.egg-info/requires.txt
+[3.393s] writing top-level names to ../../build/robot_description/robot_description.egg-info/top_level.txt
+[3.551s] reading manifest file '../../build/robot_description/robot_description.egg-info/SOURCES.txt'
+[3.555s] writing manifest file '../../build/robot_description/robot_description.egg-info/SOURCES.txt'
+[3.559s] running build
+[3.559s] running build_py
+[3.559s] running install
+[3.597s] running install_lib
+[3.668s] running install_data
+[3.668s] copying description/robot_description.urdf -> /home/mandy/Delivery-Bot/install/robot_description/share/robot_description/description
+[3.670s] running install_egg_info
+[3.728s] removing '/home/mandy/Delivery-Bot/install/robot_description/lib/python3.12/site-packages/robot_description-0.0.0-py3.12.egg-info' (and everything under it)
+[3.729s] Copying ../../build/robot_description/robot_description.egg-info to /home/mandy/Delivery-Bot/install/robot_description/lib/python3.12/site-packages/robot_description-0.0.0-py3.12.egg-info
+[3.731s] running install_scripts
+[4.042s] writing list of installed files to '/home/mandy/Delivery-Bot/build/robot_description/install.log'
+[4.117s] Invoked command in '/home/mandy/Delivery-Bot/src/robot_description' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/mandy/Delivery-Bot/build/robot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mandy/Delivery-Bot/install/robot_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_description build --build-base /home/mandy/Delivery-Bot/build/robot_description/build install --record /home/mandy/Delivery-Bot/build/robot_description/install.log --single-version-externally-managed install_data

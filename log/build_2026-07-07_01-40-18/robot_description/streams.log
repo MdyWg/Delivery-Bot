@@ -1,0 +1,23 @@
+[0.941s] Invoking command in '/home/nyu-rdt/Delivery-Bot/build/robot_description': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nyu-rdt/Delivery-Bot/build/robot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nyu-rdt/Delivery-Bot/install/robot_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/nyu-rdt/Delivery-Bot/build/robot_description/build --no-deps symlink_data --force
+[1.184s] running develop
+[1.335s] running egg_info
+[1.350s] writing robot_description.egg-info/PKG-INFO
+[1.350s] writing dependency_links to robot_description.egg-info/dependency_links.txt
+[1.350s] writing requirements to robot_description.egg-info/requires.txt
+[1.350s] writing top-level names to robot_description.egg-info/top_level.txt
+[1.381s] reading manifest file 'robot_description.egg-info/SOURCES.txt'
+[1.381s] writing manifest file 'robot_description.egg-info/SOURCES.txt'
+[1.399s] running build_ext
+[1.399s] Creating /home/nyu-rdt/Delivery-Bot/install/robot_description/lib/python3.12/site-packages/robot-description.egg-link (link to .)
+[1.400s] 
+[1.400s] Installed /home/nyu-rdt/Delivery-Bot/build/robot_description
+[1.400s] running symlink_data
+[1.400s] symbolically linking /home/nyu-rdt/Delivery-Bot/build/robot_description/resource/robot_description -> /home/nyu-rdt/Delivery-Bot/install/robot_description/share/ament_index/resource_index/packages
+[1.400s] symbolically linking /home/nyu-rdt/Delivery-Bot/build/robot_description/package.xml -> /home/nyu-rdt/Delivery-Bot/install/robot_description/share/robot_description
+[1.400s] symbolically linking /home/nyu-rdt/Delivery-Bot/build/robot_description/description/robot_description.sdf -> /home/nyu-rdt/Delivery-Bot/install/robot_description/share/robot_description/description
+[1.401s] symbolically linking /home/nyu-rdt/Delivery-Bot/build/robot_description/description/robot_description.urdf -> /home/nyu-rdt/Delivery-Bot/install/robot_description/share/robot_description/description
+[1.401s] symbolically linking /home/nyu-rdt/Delivery-Bot/build/robot_description/launch/display.launch.py -> /home/nyu-rdt/Delivery-Bot/install/robot_description/share/robot_description/launch
+[1.401s] symbolically linking /home/nyu-rdt/Delivery-Bot/build/robot_description/meshes/head_v1.STL -> /home/nyu-rdt/Delivery-Bot/install/robot_description/share/robot_description/meshes
+[1.401s] symbolically linking /home/nyu-rdt/Delivery-Bot/build/robot_description/meshes/body_v2.STL -> /home/nyu-rdt/Delivery-Bot/install/robot_description/share/robot_description/meshes
+[1.401s] symbolically linking /home/nyu-rdt/Delivery-Bot/build/robot_description/rviz/config.rviz -> /home/nyu-rdt/Delivery-Bot/install/robot_description/share/robot_description/rviz
+[1.437s] Invoked command in '/home/nyu-rdt/Delivery-Bot/build/robot_description' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nyu-rdt/Delivery-Bot/build/robot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nyu-rdt/Delivery-Bot/install/robot_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/nyu-rdt/Delivery-Bot/build/robot_description/build --no-deps symlink_data --force

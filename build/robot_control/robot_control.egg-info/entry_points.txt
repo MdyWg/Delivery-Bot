@@ -1,0 +1,2 @@
+[console_scripts]
+odom_publisher = robot_control.odom_publisher:main

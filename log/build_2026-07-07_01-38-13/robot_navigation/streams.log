@@ -1,0 +1,19 @@
+[1.029s] Invoking command in '/home/nyu-rdt/Delivery-Bot/src/robot_navigation': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nyu-rdt/Delivery-Bot/build/robot_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nyu-rdt/Delivery-Bot/install/robot_navigation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_navigation build --build-base /home/nyu-rdt/Delivery-Bot/build/robot_navigation/build install --record /home/nyu-rdt/Delivery-Bot/build/robot_navigation/install.log --single-version-externally-managed install_data
+[1.225s] running egg_info
+[1.239s] writing ../../build/robot_navigation/robot_navigation.egg-info/PKG-INFO
+[1.239s] writing dependency_links to ../../build/robot_navigation/robot_navigation.egg-info/dependency_links.txt
+[1.240s] writing requirements to ../../build/robot_navigation/robot_navigation.egg-info/requires.txt
+[1.240s] writing top-level names to ../../build/robot_navigation/robot_navigation.egg-info/top_level.txt
+[1.270s] reading manifest file '../../build/robot_navigation/robot_navigation.egg-info/SOURCES.txt'
+[1.270s] writing manifest file '../../build/robot_navigation/robot_navigation.egg-info/SOURCES.txt'
+[1.270s] running build
+[1.270s] running build_py
+[1.270s] running install
+[1.274s] running install_lib
+[1.289s] running install_data
+[1.289s] running install_egg_info
+[1.305s] removing '/home/nyu-rdt/Delivery-Bot/install/robot_navigation/lib/python3.12/site-packages/robot_navigation-0.0.0-py3.12.egg-info' (and everything under it)
+[1.305s] Copying ../../build/robot_navigation/robot_navigation.egg-info to /home/nyu-rdt/Delivery-Bot/install/robot_navigation/lib/python3.12/site-packages/robot_navigation-0.0.0-py3.12.egg-info
+[1.306s] running install_scripts
+[1.403s] writing list of installed files to '/home/nyu-rdt/Delivery-Bot/build/robot_navigation/install.log'
+[1.443s] Invoked command in '/home/nyu-rdt/Delivery-Bot/src/robot_navigation' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nyu-rdt/Delivery-Bot/build/robot_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nyu-rdt/Delivery-Bot/install/robot_navigation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_navigation build --build-base /home/nyu-rdt/Delivery-Bot/build/robot_navigation/build install --record /home/nyu-rdt/Delivery-Bot/build/robot_navigation/install.log --single-version-externally-managed install_data

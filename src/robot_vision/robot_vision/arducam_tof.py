@@ -15,18 +15,18 @@ class ArducamToFNode(Node):
 
         self.cam = ac.ArducamCamera()
 
-        ret = self.cam.open(ac.TOFConnect.CSI, 0)
+        ret = self.cam.open(ac.Connection.CSI, 0)
         if ret != 0:
             print("Failed to open camera. Error code:", ret)
             return
 
-        ret = self.cam.start(ac.TOFOutput.DEPTH)
+        ret = self.cam.start(ac.FrameType.DEPTH)
         if ret != 0:
             print("Failed to start camera. Error code:", ret)
             self.cam.close()
             return
 
-        self.range  = self.cam.getControl(ac.TOFControl.RANGE)
+        self.range  = self.cam.getControl(ac.Control.RANGE)
         self.info = self.cam.getCameraInfo()
         self.get_logger().info(f'Camera {self.info.width}x{self.info.height}')
 
@@ -36,8 +36,8 @@ class ArducamToFNode(Node):
         while rclpy.ok():
             frame = self.cam.requestFrame(2000)
             if frame is not None and isinstance(frame, ac.DepthData):
-                depth_buf = frame.getDepthData()
-                confidence_buf = frame.getConfidenceData()
+                depth_buf = frame.depth_data
+                confidence_buf = frame.confidence_data
 
                 depth_buf[confidence_buf < 30] = 0.0
 
@@ -88,3 +88,6 @@ def main(args=None):
     finally:
         node.destroy_node()
         rclpy.shutdown()
+
+if __name__ == '__main__':
+    main()

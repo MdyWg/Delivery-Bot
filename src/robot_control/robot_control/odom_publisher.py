@@ -20,7 +20,7 @@ class OdomPublisher(Node):
         self.vy  = 0.0
         self.vth = 0.0
 
-        self.wheel_radius     = 0.05
+        self.wheel_radius     = 0.0325
         self.wheel_separation = 0.275
         
         self.last_time = self.get_clock().now()

@@ -1,1 +1,0 @@
-/home/nyu-rdt/Delivery-Bot/src/robot_navigation/launch/navigation.launch.py

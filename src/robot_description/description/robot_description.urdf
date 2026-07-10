@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <robot name="delivery_bot" xmlns:xacro="http://ros.org/wiki/xacro">
-    <xacro:property name="wheel_radius" value="0.05"/>
+    <xacro:property name="wheel_radius" value="0.0325"/>
     <xacro:property name="wheel_width" value="0.02"/>
     <xacro:property name="wheel_ygap" value="0.0125"/>
     <xacro:property name="wheel_zoff" value="0.025"/>

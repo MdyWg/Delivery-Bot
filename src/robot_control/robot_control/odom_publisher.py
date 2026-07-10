@@ -5,6 +5,7 @@ from tf2_ros import TransformBroadcaster
 import tf_transformations
 from geometry_msgs.msg import Quaternion, TransformStamped
 from nav_msgs.msg import Odometry
+from std_msgs.msg import Float64MultiArray
 
 class OdomPublisher(Node):
     def __init__(self):
@@ -33,10 +34,10 @@ class OdomPublisher(Node):
 
     
     def wheel_callback(self, msg):
-        fl, fr, rl, rr = msg.data
+        left_rad_s, right_rad_s = msg.data
 
-        left_ms  = ((fl + rl) / 2.0) * self.wheel_radius
-        right_ms = ((fr + rr) / 2.0) * self.wheel_radius
+        left_ms  = left_rad_s * self.wheel_radius
+        right_ms = right_rad_s * self.wheel_radius
 
         self.vx  = (right_ms + left_ms) / 2.0
         self.vy  = 0.0

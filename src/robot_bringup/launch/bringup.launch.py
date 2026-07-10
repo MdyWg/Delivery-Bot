@@ -37,13 +37,13 @@ def generate_launch_description():
         }]
     )
 
-    # odom_publisher = Node(
-    #     package='robot_control',
-    #     executable='odom_publisher',
-    #     name='odom_publisher',
-    #     output='screen',
-    #     parameters=[{'use_sim_time': use_sim_time}]
-    # )
+    odom_publisher = Node(
+        package='robot_control',
+        executable='odom_publisher',
+        name='odom_publisher',
+        output='screen',
+        parameters=[{'use_sim_time': use_sim_time}]
+    )
 
     # publishes zero joint states for continuous joints (wheels) until
     # real encoder data is available via ros2_control

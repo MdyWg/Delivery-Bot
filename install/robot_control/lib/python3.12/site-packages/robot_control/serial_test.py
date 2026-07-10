@@ -1,5 +1,4 @@
 import serial
-import time
 
 
 def parse_encoder_line(line):
@@ -22,8 +21,3 @@ while True:
     if line:
         print(f"Received: {line}")
         parse_encoder_line(line)
-
-# ser = serial.Serial('/dev/ttyAMA0', baudrate=115200, timeout=1)
-# time.sleep(2)
-# ser.write(b'STOP\n')
-# print("Sent STOP command to the robot.")

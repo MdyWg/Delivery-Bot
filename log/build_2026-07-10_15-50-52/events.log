@@ -1,0 +1,124 @@
+[0.000000] (-) TimerEvent: {}
+[0.001714] (-) JobUnselected: {'identifier': 'robot_bringup'}
+[0.002474] (-) JobUnselected: {'identifier': 'robot_description'}
+[0.002554] (-) JobUnselected: {'identifier': 'robot_navigation'}
+[0.002645] (-) JobUnselected: {'identifier': 'robot_vision'}
+[0.003269] (robot_control) JobQueued: {'identifier': 'robot_control', 'dependencies': OrderedDict()}
+[0.003465] (robot_control) JobStarted: {'identifier': 'robot_control'}
+[0.099204] (-) TimerEvent: {}
+[0.199993] (-) TimerEvent: {}
+[0.300784] (-) TimerEvent: {}
+[0.401376] (-) TimerEvent: {}
+[0.501950] (-) TimerEvent: {}
+[0.602503] (-) TimerEvent: {}
+[0.703065] (-) TimerEvent: {}
+[0.803621] (-) TimerEvent: {}
+[0.904159] (-) TimerEvent: {}
+[1.004833] (-) TimerEvent: {}
+[1.105879] (-) TimerEvent: {}
+[1.206734] (-) TimerEvent: {}
+[1.307702] (-) TimerEvent: {}
+[1.408265] (-) TimerEvent: {}
+[1.508852] (-) TimerEvent: {}
+[1.609379] (-) TimerEvent: {}
+[1.709947] (-) TimerEvent: {}
+[1.810509] (-) TimerEvent: {}
+[1.911097] (-) TimerEvent: {}
+[2.011758] (-) TimerEvent: {}
+[2.112476] (-) TimerEvent: {}
+[2.213195] (-) TimerEvent: {}
+[2.313943] (-) TimerEvent: {}
+[2.414690] (-) TimerEvent: {}
+[2.515734] (-) TimerEvent: {}
+[2.616454] (-) TimerEvent: {}
+[2.717158] (-) TimerEvent: {}
+[2.817841] (-) TimerEvent: {}
+[2.918425] (-) TimerEvent: {}
+[3.019105] (-) TimerEvent: {}
+[3.119710] (-) TimerEvent: {}
+[3.220280] (-) TimerEvent: {}
+[3.321000] (-) TimerEvent: {}
+[3.421650] (-) TimerEvent: {}
+[3.522196] (-) TimerEvent: {}
+[3.622706] (-) TimerEvent: {}
+[3.723216] (-) TimerEvent: {}
+[3.823738] (-) TimerEvent: {}
+[3.924296] (-) TimerEvent: {}
+[4.024876] (-) TimerEvent: {}
+[4.125412] (-) TimerEvent: {}
+[4.226162] (-) TimerEvent: {}
+[4.326942] (-) TimerEvent: {}
+[4.427628] (-) TimerEvent: {}
+[4.528471] (-) TimerEvent: {}
+[4.581854] (robot_control) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/robot_control', 'build', '--build-base', '/home/mandy/Delivery-Bot/build/robot_control/build', 'install', '--record', '/home/mandy/Delivery-Bot/build/robot_control/install.log', '--install-scripts', '$base/lib/robot_control', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/mandy/Delivery-Bot/src/robot_control', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'mandy', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/mandy', 'OLDPWD': '/home/mandy/Delivery-Bot/src/robot_vision/robot_vision', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'PS1': '(myenv) \\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$', 'SYSTEMD_EXEC_PID': '2281', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/mandy/Delivery-Bot/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'mandy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'mandy', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/home/mandy/Arducam_tof_camera/myenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/mandy-desktop:@/tmp/.ICE-unix/2248,unix/mandy-desktop:/tmp/.ICE-unix/2248', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/5def2504_2dd9_4a85_92a3_f5401988a09e', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'VIRTUAL_ENV_PROMPT': '(myenv)', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.1CIQS3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.111', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/mandy/Delivery-Bot/install/robot_control:/home/mandy/Delivery-Bot/install/robot_vision:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VIRTUAL_ENV': '/home/mandy/Arducam_tof_camera/myenv', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/mandy/Delivery-Bot/build/robot_control', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/mandy/Delivery-Bot/build/robot_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mandy/Delivery-Bot/install/robot_control/lib/python3.12/site-packages:/home/mandy/Delivery-Bot/install/robot_control/lib/python3.12/site-packages:/home/mandy/Delivery-Bot/install/robot_vision/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[4.628687] (-) TimerEvent: {}
+[4.729231] (-) TimerEvent: {}
+[4.829883] (-) TimerEvent: {}
+[4.930472] (-) TimerEvent: {}
+[5.031041] (-) TimerEvent: {}
+[5.131637] (-) TimerEvent: {}
+[5.232174] (-) TimerEvent: {}
+[5.332699] (-) TimerEvent: {}
+[5.433227] (-) TimerEvent: {}
+[5.533795] (-) TimerEvent: {}
+[5.634320] (-) TimerEvent: {}
+[5.734947] (-) TimerEvent: {}
+[5.753982] (robot_control) StdoutLine: {'line': b'running egg_info\n'}
+[5.755251] (robot_control) StdoutLine: {'line': b'creating ../../build/robot_control/robot_control.egg-info\n'}
+[5.832274] (robot_control) StdoutLine: {'line': b'writing ../../build/robot_control/robot_control.egg-info/PKG-INFO\n'}
+[5.833766] (robot_control) StdoutLine: {'line': b'writing dependency_links to ../../build/robot_control/robot_control.egg-info/dependency_links.txt\n'}
+[5.834805] (robot_control) StdoutLine: {'line': b'writing entry points to ../../build/robot_control/robot_control.egg-info/entry_points.txt\n'}
+[5.835350] (-) TimerEvent: {}
+[5.838823] (robot_control) StdoutLine: {'line': b'writing requirements to ../../build/robot_control/robot_control.egg-info/requires.txt\n'}
+[5.839343] (robot_control) StdoutLine: {'line': b'writing top-level names to ../../build/robot_control/robot_control.egg-info/top_level.txt\n'}
+[5.839759] (robot_control) StdoutLine: {'line': b"writing manifest file '../../build/robot_control/robot_control.egg-info/SOURCES.txt'\n"}
+[5.935513] (-) TimerEvent: {}
+[6.017031] (robot_control) StdoutLine: {'line': b"reading manifest file '../../build/robot_control/robot_control.egg-info/SOURCES.txt'\n"}
+[6.019932] (robot_control) StdoutLine: {'line': b"writing manifest file '../../build/robot_control/robot_control.egg-info/SOURCES.txt'\n"}
+[6.020614] (robot_control) StdoutLine: {'line': b'running build\n'}
+[6.021119] (robot_control) StdoutLine: {'line': b'running build_py\n'}
+[6.021693] (robot_control) StdoutLine: {'line': b'creating /home/mandy/Delivery-Bot/build/robot_control/build\n'}
+[6.022301] (robot_control) StdoutLine: {'line': b'creating /home/mandy/Delivery-Bot/build/robot_control/build/lib\n'}
+[6.023108] (robot_control) StdoutLine: {'line': b'creating /home/mandy/Delivery-Bot/build/robot_control/build/lib/robot_control\n'}
+[6.023756] (robot_control) StdoutLine: {'line': b'copying robot_control/__init__.py -> /home/mandy/Delivery-Bot/build/robot_control/build/lib/robot_control\n'}
+[6.024295] (robot_control) StdoutLine: {'line': b'copying robot_control/odom_publisher.py -> /home/mandy/Delivery-Bot/build/robot_control/build/lib/robot_control\n'}
+[6.025193] (robot_control) StdoutLine: {'line': b'copying robot_control/serial_test.py -> /home/mandy/Delivery-Bot/build/robot_control/build/lib/robot_control\n'}
+[6.026180] (robot_control) StdoutLine: {'line': b'copying robot_control/serial_comm.py -> /home/mandy/Delivery-Bot/build/robot_control/build/lib/robot_control\n'}
+[6.027567] (robot_control) StdoutLine: {'line': b'running install\n'}
+[6.035692] (-) TimerEvent: {}
+[6.055985] (robot_control) StdoutLine: {'line': b'running install_lib\n'}
+[6.134970] (robot_control) StdoutLine: {'line': b'creating /home/mandy/Delivery-Bot/install/robot_control/lib/python3.12/site-packages/robot_control\n'}
+[6.135566] (robot_control) StdoutLine: {'line': b'copying /home/mandy/Delivery-Bot/build/robot_control/build/lib/robot_control/__init__.py -> /home/mandy/Delivery-Bot/install/robot_control/lib/python3.12/site-packages/robot_control\n'}
+[6.136022] (-) TimerEvent: {}
+[6.136372] (robot_control) StdoutLine: {'line': b'copying /home/mandy/Delivery-Bot/build/robot_control/build/lib/robot_control/odom_publisher.py -> /home/mandy/Delivery-Bot/install/robot_control/lib/python3.12/site-packages/robot_control\n'}
+[6.137421] (robot_control) StdoutLine: {'line': b'copying /home/mandy/Delivery-Bot/build/robot_control/build/lib/robot_control/serial_test.py -> /home/mandy/Delivery-Bot/install/robot_control/lib/python3.12/site-packages/robot_control\n'}
+[6.138481] (robot_control) StdoutLine: {'line': b'copying /home/mandy/Delivery-Bot/build/robot_control/build/lib/robot_control/serial_comm.py -> /home/mandy/Delivery-Bot/install/robot_control/lib/python3.12/site-packages/robot_control\n'}
+[6.141444] (robot_control) StdoutLine: {'line': b'byte-compiling /home/mandy/Delivery-Bot/install/robot_control/lib/python3.12/site-packages/robot_control/__init__.py to __init__.cpython-312.pyc\n'}
+[6.145076] (robot_control) StdoutLine: {'line': b'byte-compiling /home/mandy/Delivery-Bot/install/robot_control/lib/python3.12/site-packages/robot_control/odom_publisher.py to odom_publisher.cpython-312.pyc\n'}
+[6.149865] (robot_control) StdoutLine: {'line': b'byte-compiling /home/mandy/Delivery-Bot/install/robot_control/lib/python3.12/site-packages/robot_control/serial_test.py to serial_test.cpython-312.pyc\n'}
+[6.151946] (robot_control) StdoutLine: {'line': b'byte-compiling /home/mandy/Delivery-Bot/install/robot_control/lib/python3.12/site-packages/robot_control/serial_comm.py to serial_comm.cpython-312.pyc\n'}
+[6.156220] (robot_control) StdoutLine: {'line': b'running install_data\n'}
+[6.156880] (robot_control) StdoutLine: {'line': b'creating /home/mandy/Delivery-Bot/install/robot_control/share/ament_index\n'}
+[6.157447] (robot_control) StdoutLine: {'line': b'creating /home/mandy/Delivery-Bot/install/robot_control/share/ament_index/resource_index\n'}
+[6.158035] (robot_control) StdoutLine: {'line': b'creating /home/mandy/Delivery-Bot/install/robot_control/share/ament_index/resource_index/packages\n'}
+[6.158571] (robot_control) StdoutLine: {'line': b'copying resource/robot_control -> /home/mandy/Delivery-Bot/install/robot_control/share/ament_index/resource_index/packages\n'}
+[6.159170] (robot_control) StdoutLine: {'line': b'copying package.xml -> /home/mandy/Delivery-Bot/install/robot_control/share/robot_control\n'}
+[6.159676] (robot_control) StdoutLine: {'line': b'copying launch/control.launch.py -> /home/mandy/Delivery-Bot/install/robot_control/share/robot_control\n'}
+[6.160201] (robot_control) StdoutLine: {'line': b'running install_egg_info\n'}
+[6.236190] (-) TimerEvent: {}
+[6.249654] (robot_control) StdoutLine: {'line': b'Copying ../../build/robot_control/robot_control.egg-info to /home/mandy/Delivery-Bot/install/robot_control/lib/python3.12/site-packages/robot_control-0.0.0-py3.12.egg-info\n'}
+[6.255088] (robot_control) StdoutLine: {'line': b'running install_scripts\n'}
+[6.336348] (-) TimerEvent: {}
+[6.436931] (-) TimerEvent: {}
+[6.537505] (-) TimerEvent: {}
+[6.638075] (-) TimerEvent: {}
+[6.738690] (-) TimerEvent: {}
+[6.839242] (-) TimerEvent: {}
+[6.890454] (robot_control) StdoutLine: {'line': b'Installing odom_publisher script to /home/mandy/Delivery-Bot/install/robot_control/lib/robot_control\n'}
+[6.891503] (robot_control) StdoutLine: {'line': b'Installing serial_comm script to /home/mandy/Delivery-Bot/install/robot_control/lib/robot_control\n'}
+[6.893171] (robot_control) StdoutLine: {'line': b"writing list of installed files to '/home/mandy/Delivery-Bot/build/robot_control/install.log'\n"}
+[6.939519] (-) TimerEvent: {}
+[7.035850] (robot_control) CommandEnded: {'returncode': 0}
+[7.039884] (-) TimerEvent: {}
+[7.101201] (robot_control) JobEnded: {'identifier': 'robot_control', 'rc': 0}
+[7.105161] (-) EventReactorShutdown: {}

@@ -1,0 +1,3 @@
+[console_scripts]
+odom_publisher = robot_control.odom_publisher:main
+serial_comm = robot_control.serial_comm:main

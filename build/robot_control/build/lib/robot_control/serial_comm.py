@@ -6,6 +6,9 @@ from rclpy.node import Node
 from geometry_msgs.msg import Twist
 from std_msgs.msg import Float64MultiArray
 
+# TODO: firmware reports left_speed/right_speed as encoder counts per 100ms.
+# Confirm counts-per-revolution (post-gearbox, at the wheel) from the
+# motor/encoder datasheet and replace this placeholder before trusting odometry.
 TICKS_PER_REV = 1.0
 
 
@@ -47,6 +50,7 @@ class SerialComm(Node):
             parts = line.split(',')
             if len(parts) != 6:
                 continue
+
             try:
                 left_speed = int(parts[4])
                 right_speed = int(parts[5])

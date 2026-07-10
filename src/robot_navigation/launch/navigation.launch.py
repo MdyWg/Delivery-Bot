@@ -8,7 +8,7 @@ import os
 
 def generate_launch_description():
     pkg_share     = FindPackageShare(package='robot_navigation').find('robot_navigation')
-    slam_config   = os.path.join(pkg_share, 'config', 'slam_toolbox.yaml')
+    slam_config   = os.path.join(pkg_share, 'config', 'slam_params.yaml')
     nav2_params   = os.path.join(pkg_share, 'config', 'nav2_params.yaml')
 
     depth_to_scan_node = Node(

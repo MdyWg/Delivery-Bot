@@ -10,51 +10,24 @@ from launch_ros.substitutions import FindPackageShare
 def generate_launch_description():
     use_sim_time = LaunchConfiguration('use_sim_time')
 
-    urdf_path = os.path.join(
-        FindPackageShare('robot_description').find('robot_description'),
-        'description', 'robot_description.urdf'
-    )
-
-    rviz_config_path = os.path.join(
-        FindPackageShare('robot_description').find('robot_description'),
-        'rviz', 'config.rviz'
-    )
+    robot_control = FindPackageShare('robot_control')
+    robot_description = FindPackageShare('robot_description')
+    robot_navigation = FindPackageShare('robot_navigation')
+    robot_vision = FindPackageShare('robot_vision')
 
     nav_launch = os.path.join(
-        FindPackageShare('robot_navigation').find('robot_navigation'),
+        robot_navigation,
         'launch', 'navigation.launch.py'
     )
 
-    # publishes /tf and /tf_static for the robot links
-    robot_state_publisher = Node(
-        package='robot_state_publisher',
-        executable='robot_state_publisher',
-        name='robot_state_publisher',
-        output='screen',
-        parameters=[{
-            'robot_description': Command(['xacro ', urdf_path]),
-            'use_sim_time': use_sim_time,
-        }]
+    desc_launch = os.path.join(
+        robot_description,
+        'launch', 'display.launch.py'
     )
 
-    odom_publisher = Node(
-        package='robot_control',
-        executable='odom_publisher',
-        name='odom_publisher',
-        output='screen',
-        parameters=[{'use_sim_time': use_sim_time}]
-    )
-
-    # publishes zero joint states for continuous joints (wheels) until
-    # real encoder data is available via ros2_control
-    joint_state_publisher = Node(
-        package='joint_state_publisher',
-        executable='joint_state_publisher',
-        name='joint_state_publisher',
-        parameters=[{
-            'robot_description': Command(['xacro ', urdf_path]),
-            'use_sim_time': use_sim_time,
-        }]
+    control_launch = os.path.join(
+        robot_control,
+        'launch', 'control.launch.py'
     )
 
     camera = Node(
@@ -64,17 +37,18 @@ def generate_launch_description():
         output='screen',
     )
 
-    rviz = Node(
-        package='rviz2',
-        executable='rviz2',
-        name='rviz2',
-        output='screen',
-        arguments=['-d', rviz_config_path],
-    )
-
-    # EKF node (robot_localization) — fuses /odom into /odometry/filtered
     navigation = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(nav_launch),
+        launch_arguments={'use_sim_time': use_sim_time}.items()
+    )
+
+    description = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(desc_launch),
+        launch_arguments={'use_sim_time': use_sim_time}.items()
+    )
+
+    control = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(control_launch),
         launch_arguments={'use_sim_time': use_sim_time}.items()
     )
 
@@ -84,10 +58,8 @@ def generate_launch_description():
             default_value='false',
             description='Use simulation clock if true'
         ),
-        robot_state_publisher,
-        joint_state_publisher,
-        odom_publisher,
         camera,
+        control,
+        description,
         navigation,
-        rviz,
     ])

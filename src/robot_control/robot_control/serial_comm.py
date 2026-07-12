@@ -4,19 +4,14 @@ import serial
 import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import Twist
-from std_msgs.msg import Float64MultiArray
-
-TICKS_PER_REV = 1.0
-
+from robot_interfaces.msg import EncoderSpeed
 
 class SerialComm(Node):
     def __init__(self):
         super().__init__('serial_comm')
 
-        self.declare_parameter('port', '/dev/ttyAMA0')
-        self.declare_parameter('baud_rate', 115200)
-        port = self.get_parameter('port').get_parameter_value().string_value
-        baud_rate = self.get_parameter('baud_rate').get_parameter_value().integer_value
+        port = "/dev/ttyAMA0"
+        baud_rate = 115200
 
         try:
             self.ser = serial.Serial(port, baud_rate, timeout=1)
@@ -25,48 +20,44 @@ class SerialComm(Node):
             self.get_logger().fatal(f'Failed to open serial port: {e}')
             raise
 
-        self.wheel_pub = self.create_publisher(Float64MultiArray, '/wheel_velocities', 10)
+        self.ticks_per_rev = 1 #placeholder value
 
+        self.wheel_pub = self.create_publisher(EncoderSpeed, '/encoder_speeds', 10)
         self.create_subscription(Twist, '/cmd_vel', self.cmd_vel_callback, 10)
 
-        threading.Thread(target=self._read_loop, daemon=True).start()
+        threading.Thread(target=self.parse_lines, daemon=True).start()
 
-    def _read_loop(self):
-        while rclpy.ok():
+    def parse_lines(self):
+        while True:
             try:
                 line = self.ser.readline().decode('utf-8').strip()
-            except (serial.SerialException, UnicodeDecodeError) as e:
-                self.get_logger().warn(f'Serial read error: {e}')
-                continue
 
-            if not line:
-                continue
+                if not line:
+                    continue
 
-            # firmware format: "CCR1,CCR2,left_count,right_count,left_speed,right_speed"
-            # left_speed/right_speed are encoder counts per 100ms.
-            parts = line.split(',')
-            if len(parts) != 6:
-                continue
-            try:
-                left_speed = int(parts[4])
-                right_speed = int(parts[5])
-            except ValueError:
-                self.get_logger().warn(f'Could not parse encoder line: {line}')
-                continue
+                # firmware format: "PWM left,PWM right,left_count,right_count,left_speed,right_speed"
+                # left_speed/right_speed are encoder counts per 100ms.
+                parts = line.split(',')
+                if len(parts) != 6:
+                    continue
+                try:
+                    left_speed = int(parts[4])
+                    right_speed = int(parts[5])
+                except ValueError:
+                    self.get_logger().warn(f'Could not parse encoder line: {line}')
+                    continue
 
-            counts_per_sec_left = left_speed * 10.0
-            counts_per_sec_right = right_speed * 10.0
-            left_rad_s = (counts_per_sec_left / TICKS_PER_REV) * 2 * math.pi
-            right_rad_s = (counts_per_sec_right / TICKS_PER_REV) * 2 * math.pi
+                counts_per_sec_left = left_speed * 10.0
+                counts_per_sec_right = right_speed * 10.0
 
-            msg = Float64MultiArray()
-            msg.data = [left_rad_s, right_rad_s]
-            self.wheel_pub.publish(msg)
+                msg = EncoderSpeed()
+                msg.left_speed = counts_per_sec_left
+                msg.right_speed = counts_per_sec_right
+                self.wheel_pub.publish(msg)
 
     def cmd_vel_callback(self, msg: Twist):
-        # convert Twist to left/right wheel velocities for differential drive
         wheel_radius = 0.0325     # metres
-        wheel_separation = 0.275  # metres
+        wheel_separation = 0.07585  # metres
 
         vx = msg.linear.x
         vth = msg.angular.z

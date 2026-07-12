@@ -21,20 +21,23 @@ class OdomPublisher(Node):
         self.vy  = 0.0
         self.vth = 0.0
 
-        self.wheel_radius     = 0.0325
-        self.wheel_separation = 0.275
+        self.wheel_radius = 0.0325
+        self.wheel_separation = 0.07585
         
         self.last_time = self.get_clock().now()
 
         self.create_subscription(
-            Float64MultiArray, '/wheel_velocities', self.wheel_callback, 10)
+            EncoderSpeed, '/encoder_speeds', self.wheel_callback, 10)
 
         timer_period = 0.1
         self.timer = self.create_timer(timer_period, self.timer_callback)
 
     
     def wheel_callback(self, msg):
-        left_rad_s, right_rad_s = msg.data
+        left_speed, right_speed = msg.left_speed, msg.right_speed
+
+        left_rad_s  = (left_speed / self.ticks_per_rev) * 2 * math.pi
+        right_rad_s = (right_speed / self.ticks_per_rev) * 2 * math.pi
 
         left_ms  = left_rad_s * self.wheel_radius
         right_ms = right_rad_s * self.wheel_radius

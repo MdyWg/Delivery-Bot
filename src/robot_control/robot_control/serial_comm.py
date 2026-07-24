@@ -20,8 +20,6 @@ class SerialComm(Node):
             self.get_logger().fatal(f'Failed to open serial port: {e}')
             raise
 
-        self.ticks_per_rev = 1 #placeholder value
-
         self.wheel_pub = self.create_publisher(EncoderSpeed, '/encoder_speeds', 10)
         self.create_subscription(Twist, '/cmd_vel', self.cmd_vel_callback, 10)
 

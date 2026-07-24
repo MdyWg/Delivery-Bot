@@ -9,7 +9,7 @@ import os
 def generate_launch_description():
     pkg_share = FindPackageShare('robot_navigation')
     use_sim_time = LaunchConfiguration('use_sim_time')
-    localization_config = os.path.join(pkg_share, 'config', 'localization_params.yaml')
+    localization_config = os.path.join(pkg_share, 'config', 'ekf.yaml')
     slam_config = os.path.join(pkg_share, 'config', 'slam_params.yaml')
     nav2_params = os.path.join(pkg_share, 'config', 'nav2_params.yaml')
 

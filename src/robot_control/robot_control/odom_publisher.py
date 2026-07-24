@@ -1,17 +1,16 @@
 from math import *
 import rclpy
 from rclpy.node import Node
-from tf2_ros import TransformBroadcaster
 import tf_transformations
-from geometry_msgs.msg import Quaternion, TransformStamped
+from geometry_msgs.msg import Quaternion
 from nav_msgs.msg import Odometry
 from std_msgs.msg import Float64MultiArray
+from robot_interfaces.msg import EncoderSpeed
 
 class OdomPublisher(Node):
     def __init__(self):
         super().__init__('odom_publisher')
         self.odom_publisher = self.create_publisher(Odometry, 'odom', 10)
-        self.odom_broadcaster = TransformBroadcaster(self)
 
         self.x = 0.0
         self.y = 0.0
@@ -24,6 +23,8 @@ class OdomPublisher(Node):
         self.wheel_radius = 0.0325
         self.wheel_separation = 0.07585
         
+        self.ticks_per_rev = 2093
+
         self.last_time = self.get_clock().now()
 
         self.create_subscription(
@@ -36,8 +37,8 @@ class OdomPublisher(Node):
     def wheel_callback(self, msg):
         left_speed, right_speed = msg.left_speed, msg.right_speed
 
-        left_rad_s  = (left_speed / self.ticks_per_rev) * 2 * math.pi
-        right_rad_s = (right_speed / self.ticks_per_rev) * 2 * math.pi
+        left_rad_s  = (left_speed / self.ticks_per_rev) * 2 * pi
+        right_rad_s = (right_speed / self.ticks_per_rev) * 2 * pi
 
         left_ms  = left_rad_s * self.wheel_radius
         right_ms = right_rad_s * self.wheel_radius
@@ -64,18 +65,6 @@ class OdomPublisher(Node):
         odom_quat.y = odom_quat_arr[1]
         odom_quat.z = odom_quat_arr[2]
         odom_quat.w = odom_quat_arr[3]
-
-        odom_trans = TransformStamped()
-        odom_trans.header.stamp = current_time.to_msg()
-        odom_trans.header.frame_id = 'odom'
-        odom_trans.child_frame_id = 'base_link'
-
-        odom_trans.transform.translation.x = self.x
-        odom_trans.transform.translation.y = self.y
-        odom_trans.transform.translation.z = 0.0
-        odom_trans.transform.rotation = odom_quat
-
-        self.odom_broadcaster.sendTransform(odom_trans)
 
         odom_msg = Odometry()
         odom_msg.header.stamp = current_time.to_msg()

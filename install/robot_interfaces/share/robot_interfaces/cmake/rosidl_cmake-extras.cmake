@@ -1,0 +1,1 @@
+/home/mandy/Delivery-Bot/build/robot_interfaces/rosidl_cmake/rosidl_cmake-extras.cmake

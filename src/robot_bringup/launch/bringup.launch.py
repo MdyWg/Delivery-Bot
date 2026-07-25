@@ -2,7 +2,7 @@ import os
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription
 from launch.launch_description_sources import PythonLaunchDescriptionSource
-from launch.substitutions import Command, LaunchConfiguration
+from launch.substitutions import Command, LaunchConfiguration, PathJoinSubstitution
 from launch_ros.actions import Node
 from launch_ros.substitutions import FindPackageShare
 
@@ -15,21 +15,6 @@ def generate_launch_description():
     robot_navigation = FindPackageShare('robot_navigation')
     robot_vision = FindPackageShare('robot_vision')
 
-    nav_launch = os.path.join(
-        robot_navigation,
-        'launch', 'navigation.launch.py'
-    )
-
-    desc_launch = os.path.join(
-        robot_description,
-        'launch', 'display.launch.py'
-    )
-
-    control_launch = os.path.join(
-        robot_control,
-        'launch', 'control.launch.py'
-    )
-
     camera = Node(
         package='robot_vision',
         executable='arducam_tof',
@@ -38,17 +23,23 @@ def generate_launch_description():
     )
 
     navigation = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(nav_launch),
+        PythonLaunchDescriptionSource(
+            PathJoinSubstitution([robot_navigation, 'launch', 'navigation.launch.py'])
+        ),
         launch_arguments={'use_sim_time': use_sim_time}.items()
     )
 
     description = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(desc_launch),
+        PythonLaunchDescriptionSource(
+            PathJoinSubstitution([robot_description, 'launch', 'display.launch.py'])
+        ),
         launch_arguments={'use_sim_time': use_sim_time}.items()
     )
 
     control = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(control_launch),
+        PythonLaunchDescriptionSource(
+            PathJoinSubstitution([robot_control, 'launch', 'control.launch.py'])
+        ),
         launch_arguments={'use_sim_time': use_sim_time}.items()
     )
 

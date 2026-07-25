@@ -1,0 +1,6 @@
+{
+  "package_name": "robot_interfaces",
+  "non_idl_tuples": [
+    "/home/mandy/Delivery-Bot/src/robot_interfaces:msg/EncoderSpeed.msg"
+  ]
+}

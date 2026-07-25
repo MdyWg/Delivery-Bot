@@ -39,8 +39,8 @@ class SerialComm(Node):
                 if len(parts) != 6:
                     continue
                 try:
-                    left_speed = int(parts[4])
-                    right_speed = int(parts[5])
+                    left_speed = float(parts[4])
+                    right_speed = float(parts[5])
                 except ValueError:
                     self.get_logger().warn(f'Could not parse encoder line: {line}')
                     continue
@@ -52,6 +52,9 @@ class SerialComm(Node):
                 msg.left_speed = counts_per_sec_left
                 msg.right_speed = counts_per_sec_right
                 self.wheel_pub.publish(msg)
+            except serial.SerialException as e:
+                self.get_logger().error(f'Serial read error: {e}')
+                break
 
     def cmd_vel_callback(self, msg: Twist):
         wheel_radius = 0.0325     # metres
@@ -66,9 +69,8 @@ class SerialComm(Node):
         left_rad_s = left_ms / wheel_radius
         right_rad_s = right_ms / wheel_radius
 
-        # TODO: firmware doesn't parse RX commands yet -- this wire format is a
-        # placeholder until the STM32 side implements a command parser.
-        command = f'V {left_rad_s:.3f} {right_rad_s:.3f}\n'
+        self.get_logger().info(f'Cmd_vel received: vx={vx:.3f}, vth={vth:.3f} => left_rad_s={left_rad_s:.3f}, right_rad_s={right_rad_s:.3f}')
+        command = f'Left: {left_rad_s:.3f} Right: {right_rad_s:.3f}\n'
         try:
             self.ser.write(command.encode('utf-8'))
         except serial.SerialException as e:
@@ -76,7 +78,7 @@ class SerialComm(Node):
 
     def destroy_node(self):
         if self.ser.is_open:
-            self.ser.write(b'V 0.000 0.000\n')
+            self.ser.write(b'Left: 0.000 Right: 0.000\n')  # Stop the robot
             self.ser.close()
         super().destroy_node()
 

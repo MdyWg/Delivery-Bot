@@ -1,0 +1,2 @@
+[console_scripts]
+arducam_tof = robot_vision.arducam_tof:main

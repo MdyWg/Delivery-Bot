@@ -1,15 +1,15 @@
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument
 from launch.conditions import IfCondition, UnlessCondition
-from launch.substitutions import Command, LaunchConfiguration
+from launch.substitutions import Command, LaunchConfiguration, PathJoinSubstitution
 from launch_ros.actions import Node
 from launch_ros.substitutions import FindPackageShare
 import os
 
 def generate_launch_description():
-    pkg_share = FindPackageShare(package='robot_description').find('robot_description')
-    default_model_path = os.path.join(pkg_share, 'description', 'robot_description.sdf')
-    default_rviz_config_path = os.path.join(pkg_share, 'rviz', 'config.rviz')
+    pkg_share = FindPackageShare(package='robot_description')
+    default_model_path = PathJoinSubstitution([pkg_share, 'description', 'robot_description.urdf'])
+    default_rviz_config_path = PathJoinSubstitution([pkg_share, 'rviz', 'config.rviz'])
 
     robot_state_publisher_node = Node(
         package='robot_state_publisher',

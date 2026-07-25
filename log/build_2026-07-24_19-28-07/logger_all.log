@@ -1,0 +1,399 @@
+[0.438s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.439s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffffa3fd2270>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffa41b2930>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffa41b2930>>)
+[0.612s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.613s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.613s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.613s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.613s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.613s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.613s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/mandy/Delivery-Bot'
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.717s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.717s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.717s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.719s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.719s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.719s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.720s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.720s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.720s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.720s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.721s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.721s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.721s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.721s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.722s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.722s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.722s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.722s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.722s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.722s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.723s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.723s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.723s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.723s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.723s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.723s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.724s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extension 'ignore'
+[0.724s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extension 'ignore_ament_install'
+[0.724s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extensions ['colcon_pkg']
+[0.724s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extension 'colcon_pkg'
+[0.724s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extensions ['colcon_meta']
+[0.725s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extension 'colcon_meta'
+[0.725s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extensions ['ros']
+[0.725s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extension 'ros'
+[0.738s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_bringup' with type 'ros.ament_python' and name 'robot_bringup'
+[0.738s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_control) by extensions ['ignore', 'ignore_ament_install']
+[0.739s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_control) by extension 'ignore'
+[0.739s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_control) by extension 'ignore_ament_install'
+[0.739s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_control) by extensions ['colcon_pkg']
+[0.740s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_control) by extension 'colcon_pkg'
+[0.740s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_control) by extensions ['colcon_meta']
+[0.740s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_control) by extension 'colcon_meta'
+[0.740s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_control) by extensions ['ros']
+[0.740s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_control) by extension 'ros'
+[0.744s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_control' with type 'ros.ament_python' and name 'robot_control'
+[0.744s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extensions ['ignore', 'ignore_ament_install']
+[0.745s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extension 'ignore'
+[0.745s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extension 'ignore_ament_install'
+[0.745s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extensions ['colcon_pkg']
+[0.745s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extension 'colcon_pkg'
+[0.745s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extensions ['colcon_meta']
+[0.745s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extension 'colcon_meta'
+[0.746s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extensions ['ros']
+[0.746s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extension 'ros'
+[0.747s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_description' with type 'ros.ament_python' and name 'robot_description'
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_interfaces) by extension 'ignore'
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_interfaces) by extension 'ignore_ament_install'
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_interfaces) by extensions ['colcon_pkg']
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_interfaces) by extension 'colcon_pkg'
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_interfaces) by extensions ['colcon_meta']
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_interfaces) by extension 'colcon_meta'
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_interfaces) by extensions ['ros']
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_interfaces) by extension 'ros'
+[0.752s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_interfaces' with type 'ros.ament_cmake' and name 'robot_interfaces'
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_navigation) by extensions ['ignore', 'ignore_ament_install']
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_navigation) by extension 'ignore'
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_navigation) by extension 'ignore_ament_install'
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_navigation) by extensions ['colcon_pkg']
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_navigation) by extension 'colcon_pkg'
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_navigation) by extensions ['colcon_meta']
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_navigation) by extension 'colcon_meta'
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_navigation) by extensions ['ros']
+[0.754s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_navigation) by extension 'ros'
+[0.755s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_navigation' with type 'ros.ament_python' and name 'robot_navigation'
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_vision) by extensions ['ignore', 'ignore_ament_install']
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_vision) by extension 'ignore'
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_vision) by extension 'ignore_ament_install'
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_vision) by extensions ['colcon_pkg']
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_vision) by extension 'colcon_pkg'
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_vision) by extensions ['colcon_meta']
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_vision) by extension 'colcon_meta'
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_vision) by extensions ['ros']
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_vision) by extension 'ros'
+[0.759s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_vision' with type 'ros.ament_python' and name 'robot_vision'
+[0.759s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.760s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.760s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.760s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.760s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.835s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_args' from command line to 'None'
+[0.835s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_target' from command line to 'None'
+[0.835s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.836s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.836s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.836s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.836s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.836s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.836s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.836s] DEBUG:colcon.colcon_core.verb:Building package 'robot_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mandy/Delivery-Bot/build/robot_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mandy/Delivery-Bot/install/robot_description', 'merge_install': False, 'path': '/home/mandy/Delivery-Bot/src/robot_description', 'symlink_install': True, 'test_result_base': None}
+[0.837s] Level 5:colcon.colcon_core.verb:set package 'robot_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.838s] Level 5:colcon.colcon_core.verb:set package 'robot_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.838s] Level 5:colcon.colcon_core.verb:set package 'robot_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.838s] Level 5:colcon.colcon_core.verb:set package 'robot_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.838s] Level 5:colcon.colcon_core.verb:set package 'robot_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.838s] Level 5:colcon.colcon_core.verb:set package 'robot_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.838s] Level 5:colcon.colcon_core.verb:set package 'robot_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.838s] Level 5:colcon.colcon_core.verb:set package 'robot_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.838s] Level 5:colcon.colcon_core.verb:set package 'robot_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.838s] DEBUG:colcon.colcon_core.verb:Building package 'robot_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mandy/Delivery-Bot/build/robot_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mandy/Delivery-Bot/install/robot_interfaces', 'merge_install': False, 'path': '/home/mandy/Delivery-Bot/src/robot_interfaces', 'symlink_install': True, 'test_result_base': None}
+[0.839s] Level 5:colcon.colcon_core.verb:set package 'robot_navigation' build argument 'cmake_args' from command line to 'None'
+[0.840s] Level 5:colcon.colcon_core.verb:set package 'robot_navigation' build argument 'cmake_target' from command line to 'None'
+[0.840s] Level 5:colcon.colcon_core.verb:set package 'robot_navigation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.840s] Level 5:colcon.colcon_core.verb:set package 'robot_navigation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.840s] Level 5:colcon.colcon_core.verb:set package 'robot_navigation' build argument 'cmake_clean_first' from command line to 'False'
+[0.840s] Level 5:colcon.colcon_core.verb:set package 'robot_navigation' build argument 'cmake_force_configure' from command line to 'False'
+[0.840s] Level 5:colcon.colcon_core.verb:set package 'robot_navigation' build argument 'ament_cmake_args' from command line to 'None'
+[0.840s] Level 5:colcon.colcon_core.verb:set package 'robot_navigation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.840s] Level 5:colcon.colcon_core.verb:set package 'robot_navigation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.840s] DEBUG:colcon.colcon_core.verb:Building package 'robot_navigation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mandy/Delivery-Bot/build/robot_navigation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mandy/Delivery-Bot/install/robot_navigation', 'merge_install': False, 'path': '/home/mandy/Delivery-Bot/src/robot_navigation', 'symlink_install': True, 'test_result_base': None}
+[0.841s] Level 5:colcon.colcon_core.verb:set package 'robot_vision' build argument 'cmake_args' from command line to 'None'
+[0.842s] Level 5:colcon.colcon_core.verb:set package 'robot_vision' build argument 'cmake_target' from command line to 'None'
+[0.842s] Level 5:colcon.colcon_core.verb:set package 'robot_vision' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.842s] Level 5:colcon.colcon_core.verb:set package 'robot_vision' build argument 'cmake_clean_cache' from command line to 'False'
+[0.842s] Level 5:colcon.colcon_core.verb:set package 'robot_vision' build argument 'cmake_clean_first' from command line to 'False'
+[0.842s] Level 5:colcon.colcon_core.verb:set package 'robot_vision' build argument 'cmake_force_configure' from command line to 'False'
+[0.842s] Level 5:colcon.colcon_core.verb:set package 'robot_vision' build argument 'ament_cmake_args' from command line to 'None'
+[0.842s] Level 5:colcon.colcon_core.verb:set package 'robot_vision' build argument 'catkin_cmake_args' from command line to 'None'
+[0.842s] Level 5:colcon.colcon_core.verb:set package 'robot_vision' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.842s] DEBUG:colcon.colcon_core.verb:Building package 'robot_vision' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mandy/Delivery-Bot/build/robot_vision', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mandy/Delivery-Bot/install/robot_vision', 'merge_install': False, 'path': '/home/mandy/Delivery-Bot/src/robot_vision', 'symlink_install': True, 'test_result_base': None}
+[0.844s] Level 5:colcon.colcon_core.verb:set package 'robot_control' build argument 'cmake_args' from command line to 'None'
+[0.844s] Level 5:colcon.colcon_core.verb:set package 'robot_control' build argument 'cmake_target' from command line to 'None'
+[0.844s] Level 5:colcon.colcon_core.verb:set package 'robot_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.844s] Level 5:colcon.colcon_core.verb:set package 'robot_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.844s] Level 5:colcon.colcon_core.verb:set package 'robot_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.844s] Level 5:colcon.colcon_core.verb:set package 'robot_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.844s] Level 5:colcon.colcon_core.verb:set package 'robot_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.844s] Level 5:colcon.colcon_core.verb:set package 'robot_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.844s] Level 5:colcon.colcon_core.verb:set package 'robot_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.844s] DEBUG:colcon.colcon_core.verb:Building package 'robot_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mandy/Delivery-Bot/build/robot_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mandy/Delivery-Bot/install/robot_control', 'merge_install': False, 'path': '/home/mandy/Delivery-Bot/src/robot_control', 'symlink_install': True, 'test_result_base': None}
+[0.846s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_args' from command line to 'None'
+[0.846s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_target' from command line to 'None'
+[0.846s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.846s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.846s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.846s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.846s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.846s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.846s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.847s] DEBUG:colcon.colcon_core.verb:Building package 'robot_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mandy/Delivery-Bot/build/robot_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mandy/Delivery-Bot/install/robot_bringup', 'merge_install': False, 'path': '/home/mandy/Delivery-Bot/src/robot_bringup', 'symlink_install': True, 'test_result_base': None}
+[0.847s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.851s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.852s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mandy/Delivery-Bot/src/robot_interfaces' with build type 'ament_cmake'
+[0.852s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mandy/Delivery-Bot/src/robot_interfaces'
+[0.865s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.866s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.873s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/mandy/Delivery-Bot/install/robot_bringup' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.874s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/mandy/Delivery-Bot/install/robot_vision' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.874s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/mandy/Delivery-Bot/install/robot_navigation' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.874s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/mandy/Delivery-Bot/install/robot_control' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.874s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/mandy/Delivery-Bot/install/robot_interfaces' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.874s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/mandy/Delivery-Bot/install/robot_description' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.875s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/mandy/Delivery-Bot/install/robot_interfaces' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.899s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/mandy/Delivery-Bot/src/robot_description' with build type 'ament_python'
+[0.900s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_description', 'ament_prefix_path')
+[0.903s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mandy/Delivery-Bot/install/robot_description/share/robot_description/hook/ament_prefix_path.dsv'
+[0.906s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mandy/Delivery-Bot/install/robot_description/share/robot_description/hook/ament_prefix_path.sh'
+[0.909s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.934s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/mandy/Delivery-Bot/src/robot_navigation' with build type 'ament_python'
+[0.936s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_navigation', 'ament_prefix_path')
+[0.937s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mandy/Delivery-Bot/install/robot_navigation/share/robot_navigation/hook/ament_prefix_path.dsv'
+[0.941s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mandy/Delivery-Bot/install/robot_navigation/share/robot_navigation/hook/ament_prefix_path.sh'
+[0.943s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.974s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/mandy/Delivery-Bot/src/robot_vision' with build type 'ament_python'
+[0.974s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_vision', 'ament_prefix_path')
+[0.975s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mandy/Delivery-Bot/install/robot_vision/share/robot_vision/hook/ament_prefix_path.dsv'
+[0.978s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mandy/Delivery-Bot/install/robot_vision/share/robot_vision/hook/ament_prefix_path.sh'
+[0.981s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.030s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mandy/Delivery-Bot/build/robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mandy/Delivery-Bot/install/robot_bringup:/home/mandy/Delivery-Bot/install/robot_vision:/home/mandy/Delivery-Bot/install/robot_navigation:/home/mandy/Delivery-Bot/install/robot_control:/home/mandy/Delivery-Bot/install/robot_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/mandy/Delivery-Bot/src/robot_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mandy/Delivery-Bot/install/robot_interfaces
+[2.198s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/mandy/Delivery-Bot/src/robot_description'
+[2.199s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.369s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/mandy/Delivery-Bot/src/robot_navigation'
+[3.370s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.630s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/mandy/Delivery-Bot/src/robot_vision'
+[4.631s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.971s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: setopt, build_py, install_scripts, easy_install, upload, update_catalog, install, bdist_dumb, egg_info, bdist_wheel, extract_messages, install_data, register, init_catalog, test, upload_docs, bdist_rpm, build_ext, install_lib, clean, bdist, build_clib, install_headers, sdist, compile_catalog, build, saveopts, bdist_egg, dist_info, alias, develop, editable_wheel, rotate, check, install_egg_info, build_scripts, symlink_data
+[9.321s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: setopt, build_py, install_scripts, easy_install, upload, update_catalog, install, bdist_dumb, egg_info, bdist_wheel, extract_messages, install_data, register, init_catalog, test, upload_docs, bdist_rpm, build_ext, install_lib, clean, bdist, build_clib, install_headers, sdist, compile_catalog, build, saveopts, bdist_egg, dist_info, alias, develop, editable_wheel, rotate, check, install_egg_info, build_scripts, symlink_data
+[9.584s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: setopt, build_py, install_scripts, easy_install, upload, update_catalog, install, bdist_dumb, egg_info, bdist_wheel, extract_messages, install_data, register, init_catalog, test, upload_docs, bdist_rpm, build_ext, install_lib, clean, bdist, build_clib, install_headers, sdist, compile_catalog, build, saveopts, bdist_egg, dist_info, alias, develop, editable_wheel, rotate, check, install_egg_info, build_scripts, symlink_data
+[11.722s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools 'develop' options: --site-dirs, --always-unzip, --index-url, --zip-ok, --exclude-scripts, --quiet, --user, --optimize, --install-dir, --upgrade, --uninstall, --no-user-cfg, --install-layout, --prefix, --always-copy, --editable, --dry-run, --script-dir, --find-links, --help, --no-deps, --verbose, --local-snapshots-ok, --allow-hosts, --version, --force-installation-into-system-dir, --egg-path, --no-find-links, --record, --build-directory, --multi-version
+[11.738s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mandy/Delivery-Bot/build/robot_vision': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/mandy/Delivery-Bot/build/robot_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mandy/Delivery-Bot/install/robot_vision/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/mandy/Delivery-Bot/build/robot_vision/build --no-deps symlink_data
+[12.526s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools 'develop' options: --site-dirs, --always-unzip, --index-url, --zip-ok, --exclude-scripts, --quiet, --user, --optimize, --install-dir, --upgrade, --uninstall, --no-user-cfg, --install-layout, --prefix, --always-copy, --editable, --dry-run, --script-dir, --find-links, --help, --no-deps, --verbose, --local-snapshots-ok, --allow-hosts, --version, --force-installation-into-system-dir, --egg-path, --no-find-links, --record, --build-directory, --multi-version
+[12.552s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mandy/Delivery-Bot/build/robot_description': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/mandy/Delivery-Bot/build/robot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mandy/Delivery-Bot/install/robot_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/mandy/Delivery-Bot/build/robot_description/build --no-deps symlink_data
+[12.557s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools 'develop' options: --site-dirs, --always-unzip, --index-url, --zip-ok, --exclude-scripts, --quiet, --user, --optimize, --install-dir, --upgrade, --uninstall, --no-user-cfg, --install-layout, --prefix, --always-copy, --editable, --dry-run, --script-dir, --find-links, --help, --no-deps, --verbose, --local-snapshots-ok, --allow-hosts, --version, --force-installation-into-system-dir, --egg-path, --no-find-links, --record, --build-directory, --multi-version
+[12.580s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mandy/Delivery-Bot/build/robot_navigation': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/mandy/Delivery-Bot/build/robot_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mandy/Delivery-Bot/install/robot_navigation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/mandy/Delivery-Bot/build/robot_navigation/build --no-deps symlink_data
+[17.402s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_vision', 'pythonpath_develop')
+[17.404s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mandy/Delivery-Bot/build/robot_vision' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/mandy/Delivery-Bot/build/robot_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mandy/Delivery-Bot/install/robot_vision/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/mandy/Delivery-Bot/build/robot_vision/build --no-deps symlink_data
+[17.405s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mandy/Delivery-Bot/build/robot_vision/share/robot_vision/hook/pythonpath_develop.dsv'
+[17.410s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mandy/Delivery-Bot/build/robot_vision/share/robot_vision/hook/pythonpath_develop.sh'
+[17.437s] Level 1:colcon.colcon_core.environment:checking '/home/mandy/Delivery-Bot/install/robot_vision' for CMake module files
+[17.441s] Level 1:colcon.colcon_core.environment:checking '/home/mandy/Delivery-Bot/install/robot_vision' for CMake config files
+[17.446s] Level 1:colcon.colcon_core.environment:checking '/home/mandy/Delivery-Bot/install/robot_vision/lib'
+[17.447s] Level 1:colcon.colcon_core.environment:checking '/home/mandy/Delivery-Bot/install/robot_vision/bin'
+[17.448s] Level 1:colcon.colcon_core.environment:checking '/home/mandy/Delivery-Bot/install/robot_vision/lib/pkgconfig/robot_vision.pc'
+[17.449s] Level 1:colcon.colcon_core.environment:checking '/home/mandy/Delivery-Bot/install/robot_vision/lib/python3.12/site-packages'
+[17.450s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_vision', 'pythonpath')
+[17.451s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mandy/Delivery-Bot/install/robot_vision/share/robot_vision/hook/pythonpath.dsv'
+[17.453s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mandy/Delivery-Bot/install/robot_vision/share/robot_vision/hook/pythonpath.sh'
+[17.456s] Level 1:colcon.colcon_core.environment:checking '/home/mandy/Delivery-Bot/install/robot_vision/bin'
+[17.457s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_vision)
+[17.459s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mandy/Delivery-Bot/install/robot_vision/share/robot_vision/package.dsv'
+[17.462s] INFO:colcon.colcon_core.shell:Creating package script '/home/mandy/Delivery-Bot/install/robot_vision/share/robot_vision/package.sh'
+[17.466s] INFO:colcon.colcon_core.shell:Creating package script '/home/mandy/Delivery-Bot/install/robot_vision/share/robot_vision/package.bash'
+[17.473s] INFO:colcon.colcon_core.shell:Creating package script '/home/mandy/Delivery-Bot/install/robot_vision/share/robot_vision/package.zsh'
+[17.486s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mandy/Delivery-Bot/install/robot_vision/share/colcon-core/packages/robot_vision)
+[18.430s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_navigation', 'pythonpath_develop')
+[18.431s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mandy/Delivery-Bot/build/robot_navigation/share/robot_navigation/hook/pythonpath_develop.dsv'
+[18.433s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mandy/Delivery-Bot/build/robot_navigation' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/mandy/Delivery-Bot/build/robot_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mandy/Delivery-Bot/install/robot_navigation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/mandy/Delivery-Bot/build/robot_navigation/build --no-deps symlink_data
+[18.437s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mandy/Delivery-Bot/build/robot_navigation/share/robot_navigation/hook/pythonpath_develop.sh'
+[18.439s] Level 1:colcon.colcon_core.environment:checking '/home/mandy/Delivery-Bot/install/robot_navigation' for CMake module files
+[18.442s] Level 1:colcon.colcon_core.environment:checking '/home/mandy/Delivery-Bot/install/robot_navigation' for CMake config files
+[18.445s] Level 1:colcon.colcon_core.environment:checking '/home/mandy/Delivery-Bot/install/robot_navigation/lib'
+[18.445s] Level 1:colcon.colcon_core.environment:checking '/home/mandy/Delivery-Bot/install/robot_navigation/bin'
+[18.445s] Level 1:colcon.colcon_core.environment:checking '/home/mandy/Delivery-Bot/install/robot_navigation/lib/pkgconfig/robot_navigation.pc'
+[18.446s] Level 1:colcon.colcon_core.environment:checking '/home/mandy/Delivery-Bot/install/robot_navigation/lib/python3.12/site-packages'
+[18.447s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_navigation', 'pythonpath')
+[18.447s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mandy/Delivery-Bot/install/robot_navigation/share/robot_navigation/hook/pythonpath.dsv'
+[18.449s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mandy/Delivery-Bot/install/robot_navigation/share/robot_navigation/hook/pythonpath.sh'
+[18.452s] Level 1:colcon.colcon_core.environment:checking '/home/mandy/Delivery-Bot/install/robot_navigation/bin'
+[18.452s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_navigation)
+[18.453s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mandy/Delivery-Bot/install/robot_navigation/share/robot_navigation/package.dsv'
+[18.455s] INFO:colcon.colcon_core.shell:Creating package script '/home/mandy/Delivery-Bot/install/robot_navigation/share/robot_navigation/package.sh'
+[18.457s] INFO:colcon.colcon_core.shell:Creating package script '/home/mandy/Delivery-Bot/install/robot_navigation/share/robot_navigation/package.bash'
+[18.460s] INFO:colcon.colcon_core.shell:Creating package script '/home/mandy/Delivery-Bot/install/robot_navigation/share/robot_navigation/package.zsh'
+[18.461s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mandy/Delivery-Bot/install/robot_navigation/share/colcon-core/packages/robot_navigation)
+[18.468s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_description', 'pythonpath_develop')
+[18.470s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mandy/Delivery-Bot/build/robot_description' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/mandy/Delivery-Bot/build/robot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mandy/Delivery-Bot/install/robot_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/mandy/Delivery-Bot/build/robot_description/build --no-deps symlink_data
+[18.472s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mandy/Delivery-Bot/build/robot_description/share/robot_description/hook/pythonpath_develop.dsv'
+[18.475s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mandy/Delivery-Bot/build/robot_description/share/robot_description/hook/pythonpath_develop.sh'
+[18.479s] Level 1:colcon.colcon_core.environment:checking '/home/mandy/Delivery-Bot/install/robot_description' for CMake module files
+[18.482s] Level 1:colcon.colcon_core.environment:checking '/home/mandy/Delivery-Bot/install/robot_description' for CMake config files
+[18.488s] Level 1:colcon.colcon_core.environment:checking '/home/mandy/Delivery-Bot/install/robot_description/lib'
+[18.488s] Level 1:colcon.colcon_core.environment:checking '/home/mandy/Delivery-Bot/install/robot_description/bin'
+[18.489s] Level 1:colcon.colcon_core.environment:checking '/home/mandy/Delivery-Bot/install/robot_description/lib/pkgconfig/robot_description.pc'
+[18.490s] Level 1:colcon.colcon_core.environment:checking '/home/mandy/Delivery-Bot/install/robot_description/lib/python3.12/site-packages'
+[18.491s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_description', 'pythonpath')
+[18.492s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mandy/Delivery-Bot/install/robot_description/share/robot_description/hook/pythonpath.dsv'
+[18.494s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mandy/Delivery-Bot/install/robot_description/share/robot_description/hook/pythonpath.sh'
+[18.498s] Level 1:colcon.colcon_core.environment:checking '/home/mandy/Delivery-Bot/install/robot_description/bin'
+[18.498s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_description)
+[18.499s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mandy/Delivery-Bot/install/robot_description/share/robot_description/package.dsv'
+[18.505s] INFO:colcon.colcon_core.shell:Creating package script '/home/mandy/Delivery-Bot/install/robot_description/share/robot_description/package.sh'
+[18.508s] INFO:colcon.colcon_core.shell:Creating package script '/home/mandy/Delivery-Bot/install/robot_description/share/robot_description/package.bash'
+[18.510s] INFO:colcon.colcon_core.shell:Creating package script '/home/mandy/Delivery-Bot/install/robot_description/share/robot_description/package.zsh'
+[18.511s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mandy/Delivery-Bot/install/robot_description/share/colcon-core/packages/robot_description)
+[25.717s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mandy/Delivery-Bot/build/robot_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mandy/Delivery-Bot/install/robot_bringup:/home/mandy/Delivery-Bot/install/robot_vision:/home/mandy/Delivery-Bot/install/robot_navigation:/home/mandy/Delivery-Bot/install/robot_control:/home/mandy/Delivery-Bot/install/robot_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/mandy/Delivery-Bot/src/robot_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mandy/Delivery-Bot/install/robot_interfaces
+[25.724s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mandy/Delivery-Bot/build/robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mandy/Delivery-Bot/install/robot_bringup:/home/mandy/Delivery-Bot/install/robot_vision:/home/mandy/Delivery-Bot/install/robot_navigation:/home/mandy/Delivery-Bot/install/robot_control:/home/mandy/Delivery-Bot/install/robot_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/mandy/Delivery-Bot/build/robot_interfaces -- -j4 -l4
+[56.718s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mandy/Delivery-Bot/build/robot_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mandy/Delivery-Bot/install/robot_bringup:/home/mandy/Delivery-Bot/install/robot_vision:/home/mandy/Delivery-Bot/install/robot_navigation:/home/mandy/Delivery-Bot/install/robot_control:/home/mandy/Delivery-Bot/install/robot_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/mandy/Delivery-Bot/build/robot_interfaces -- -j4 -l4
+[56.785s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mandy/Delivery-Bot/build/robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mandy/Delivery-Bot/install/robot_bringup:/home/mandy/Delivery-Bot/install/robot_vision:/home/mandy/Delivery-Bot/install/robot_navigation:/home/mandy/Delivery-Bot/install/robot_control:/home/mandy/Delivery-Bot/install/robot_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/mandy/Delivery-Bot/build/robot_interfaces
+[61.465s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_interfaces)
+[61.467s] Level 1:colcon.colcon_core.environment:checking '/home/mandy/Delivery-Bot/install/robot_interfaces' for CMake module files
+[61.467s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mandy/Delivery-Bot/build/robot_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mandy/Delivery-Bot/install/robot_bringup:/home/mandy/Delivery-Bot/install/robot_vision:/home/mandy/Delivery-Bot/install/robot_navigation:/home/mandy/Delivery-Bot/install/robot_control:/home/mandy/Delivery-Bot/install/robot_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/mandy/Delivery-Bot/build/robot_interfaces
+[61.472s] Level 1:colcon.colcon_core.environment:checking '/home/mandy/Delivery-Bot/install/robot_interfaces' for CMake config files
+[61.476s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_interfaces', 'cmake_prefix_path')
+[61.477s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/hook/cmake_prefix_path.dsv'
+[61.480s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/hook/cmake_prefix_path.sh'
+[61.483s] Level 1:colcon.colcon_core.environment:checking '/home/mandy/Delivery-Bot/install/robot_interfaces/lib'
+[61.483s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_interfaces', 'ld_library_path_lib')
+[61.484s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/hook/ld_library_path_lib.dsv'
+[61.486s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/hook/ld_library_path_lib.sh'
+[61.488s] Level 1:colcon.colcon_core.environment:checking '/home/mandy/Delivery-Bot/install/robot_interfaces/bin'
+[61.488s] Level 1:colcon.colcon_core.environment:checking '/home/mandy/Delivery-Bot/install/robot_interfaces/lib/pkgconfig/robot_interfaces.pc'
+[61.489s] Level 1:colcon.colcon_core.environment:checking '/home/mandy/Delivery-Bot/install/robot_interfaces/lib/python3.12/site-packages'
+[61.489s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_interfaces', 'pythonpath')
+[61.490s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/hook/pythonpath.dsv'
+[61.491s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/hook/pythonpath.sh'
+[61.494s] Level 1:colcon.colcon_core.environment:checking '/home/mandy/Delivery-Bot/install/robot_interfaces/bin'
+[61.495s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/package.dsv'
+[61.497s] INFO:colcon.colcon_core.shell:Creating package script '/home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/package.sh'
+[61.499s] INFO:colcon.colcon_core.shell:Creating package script '/home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/package.bash'
+[61.500s] INFO:colcon.colcon_core.shell:Creating package script '/home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/package.zsh'
+[61.502s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mandy/Delivery-Bot/install/robot_interfaces/share/colcon-core/packages/robot_interfaces)
+[61.504s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_interfaces)
+[61.505s] Level 1:colcon.colcon_core.environment:checking '/home/mandy/Delivery-Bot/install/robot_interfaces' for CMake module files
+[61.509s] Level 1:colcon.colcon_core.environment:checking '/home/mandy/Delivery-Bot/install/robot_interfaces' for CMake config files
+[61.513s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_interfaces', 'cmake_prefix_path')
+[61.513s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/hook/cmake_prefix_path.dsv'
+[61.515s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/hook/cmake_prefix_path.sh'
+[61.518s] Level 1:colcon.colcon_core.environment:checking '/home/mandy/Delivery-Bot/install/robot_interfaces/lib'
+[61.518s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_interfaces', 'ld_library_path_lib')
+[61.519s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/hook/ld_library_path_lib.dsv'
+[61.520s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/hook/ld_library_path_lib.sh'
+[61.522s] Level 1:colcon.colcon_core.environment:checking '/home/mandy/Delivery-Bot/install/robot_interfaces/bin'
+[61.523s] Level 1:colcon.colcon_core.environment:checking '/home/mandy/Delivery-Bot/install/robot_interfaces/lib/pkgconfig/robot_interfaces.pc'
+[61.524s] Level 1:colcon.colcon_core.environment:checking '/home/mandy/Delivery-Bot/install/robot_interfaces/lib/python3.12/site-packages'
+[61.524s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_interfaces', 'pythonpath')
+[61.525s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/hook/pythonpath.dsv'
+[61.526s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/hook/pythonpath.sh'
+[61.529s] Level 1:colcon.colcon_core.environment:checking '/home/mandy/Delivery-Bot/install/robot_interfaces/bin'
+[61.530s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/package.dsv'
+[61.533s] INFO:colcon.colcon_core.shell:Creating package script '/home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/package.sh'
+[61.535s] INFO:colcon.colcon_core.shell:Creating package script '/home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/package.bash'
+[61.537s] INFO:colcon.colcon_core.shell:Creating package script '/home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/package.zsh'
+[61.539s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mandy/Delivery-Bot/install/robot_interfaces/share/colcon-core/packages/robot_interfaces)
+[61.540s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/mandy/Delivery-Bot/src/robot_control' with build type 'ament_python'
+[61.541s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_control', 'ament_prefix_path')
+[61.542s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mandy/Delivery-Bot/install/robot_control/share/robot_control/hook/ament_prefix_path.dsv'
+[61.545s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mandy/Delivery-Bot/install/robot_control/share/robot_control/hook/ament_prefix_path.sh'
+[61.550s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[62.645s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/mandy/Delivery-Bot/src/robot_control'
+[62.646s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[65.771s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: setopt, build_py, install_scripts, easy_install, upload, update_catalog, install, bdist_dumb, egg_info, bdist_wheel, extract_messages, install_data, register, init_catalog, test, upload_docs, bdist_rpm, build_ext, install_lib, clean, bdist, build_clib, install_headers, sdist, compile_catalog, build, saveopts, bdist_egg, dist_info, alias, develop, editable_wheel, rotate, check, install_egg_info, build_scripts, symlink_data
+[67.534s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools 'develop' options: --site-dirs, --always-unzip, --index-url, --zip-ok, --exclude-scripts, --quiet, --user, --optimize, --install-dir, --upgrade, --uninstall, --no-user-cfg, --install-layout, --prefix, --always-copy, --editable, --dry-run, --script-dir, --find-links, --help, --no-deps, --verbose, --local-snapshots-ok, --allow-hosts, --version, --force-installation-into-system-dir, --egg-path, --no-find-links, --record, --build-directory, --multi-version
+[67.541s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mandy/Delivery-Bot/build/robot_control': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/mandy/Delivery-Bot/build/robot_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mandy/Delivery-Bot/install/robot_control/lib/python3.12/site-packages:/home/mandy/Delivery-Bot/install/robot_interfaces/lib/python3.12/site-packages:/home/mandy/Delivery-Bot/build/robot_bringup:/home/mandy/Delivery-Bot/install/robot_bringup/lib/python3.12/site-packages:/home/mandy/Delivery-Bot/build/robot_vision:/home/mandy/Delivery-Bot/install/robot_vision/lib/python3.12/site-packages:/home/mandy/Delivery-Bot/build/robot_navigation:/home/mandy/Delivery-Bot/install/robot_navigation/lib/python3.12/site-packages:/home/mandy/Delivery-Bot/build/robot_control:/home/mandy/Delivery-Bot/install/robot_control/lib/python3.12/site-packages:/home/mandy/Delivery-Bot/build/robot_description:/home/mandy/Delivery-Bot/install/robot_description/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/mandy/Delivery-Bot/build/robot_control/build --no-deps symlink_data
+[70.982s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_control', 'pythonpath_develop')
+[70.983s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mandy/Delivery-Bot/build/robot_control/share/robot_control/hook/pythonpath_develop.dsv'
+[70.984s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mandy/Delivery-Bot/build/robot_control' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/mandy/Delivery-Bot/build/robot_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mandy/Delivery-Bot/install/robot_control/lib/python3.12/site-packages:/home/mandy/Delivery-Bot/install/robot_interfaces/lib/python3.12/site-packages:/home/mandy/Delivery-Bot/build/robot_bringup:/home/mandy/Delivery-Bot/install/robot_bringup/lib/python3.12/site-packages:/home/mandy/Delivery-Bot/build/robot_vision:/home/mandy/Delivery-Bot/install/robot_vision/lib/python3.12/site-packages:/home/mandy/Delivery-Bot/build/robot_navigation:/home/mandy/Delivery-Bot/install/robot_navigation/lib/python3.12/site-packages:/home/mandy/Delivery-Bot/build/robot_control:/home/mandy/Delivery-Bot/install/robot_control/lib/python3.12/site-packages:/home/mandy/Delivery-Bot/build/robot_description:/home/mandy/Delivery-Bot/install/robot_description/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/mandy/Delivery-Bot/build/robot_control/build --no-deps symlink_data
+[70.985s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mandy/Delivery-Bot/build/robot_control/share/robot_control/hook/pythonpath_develop.sh'
+[70.988s] Level 1:colcon.colcon_core.environment:checking '/home/mandy/Delivery-Bot/install/robot_control' for CMake module files
+[70.990s] Level 1:colcon.colcon_core.environment:checking '/home/mandy/Delivery-Bot/install/robot_control' for CMake config files
+[70.993s] Level 1:colcon.colcon_core.environment:checking '/home/mandy/Delivery-Bot/install/robot_control/lib'
+[70.993s] Level 1:colcon.colcon_core.environment:checking '/home/mandy/Delivery-Bot/install/robot_control/bin'
+[70.993s] Level 1:colcon.colcon_core.environment:checking '/home/mandy/Delivery-Bot/install/robot_control/lib/pkgconfig/robot_control.pc'
+[70.994s] Level 1:colcon.colcon_core.environment:checking '/home/mandy/Delivery-Bot/install/robot_control/lib/python3.12/site-packages'
+[70.995s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_control', 'pythonpath')
+[70.995s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mandy/Delivery-Bot/install/robot_control/share/robot_control/hook/pythonpath.dsv'
+[70.997s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mandy/Delivery-Bot/install/robot_control/share/robot_control/hook/pythonpath.sh'
+[71.000s] Level 1:colcon.colcon_core.environment:checking '/home/mandy/Delivery-Bot/install/robot_control/bin'
+[71.000s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_control)
+[71.001s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mandy/Delivery-Bot/install/robot_control/share/robot_control/package.dsv'
+[71.004s] INFO:colcon.colcon_core.shell:Creating package script '/home/mandy/Delivery-Bot/install/robot_control/share/robot_control/package.sh'
+[71.006s] INFO:colcon.colcon_core.shell:Creating package script '/home/mandy/Delivery-Bot/install/robot_control/share/robot_control/package.bash'
+[71.010s] INFO:colcon.colcon_core.shell:Creating package script '/home/mandy/Delivery-Bot/install/robot_control/share/robot_control/package.zsh'
+[71.013s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mandy/Delivery-Bot/install/robot_control/share/colcon-core/packages/robot_control)
+[71.015s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/mandy/Delivery-Bot/src/robot_bringup' with build type 'ament_python'
+[71.016s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_bringup', 'ament_prefix_path')
+[71.017s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mandy/Delivery-Bot/install/robot_bringup/share/robot_bringup/hook/ament_prefix_path.dsv'
+[71.022s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mandy/Delivery-Bot/install/robot_bringup/share/robot_bringup/hook/ament_prefix_path.sh'
+[71.025s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[72.161s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/mandy/Delivery-Bot/src/robot_bringup'
+[72.161s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[75.296s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: setopt, build_py, install_scripts, easy_install, upload, update_catalog, install, bdist_dumb, egg_info, bdist_wheel, extract_messages, install_data, register, init_catalog, test, upload_docs, bdist_rpm, build_ext, install_lib, clean, bdist, build_clib, install_headers, sdist, compile_catalog, build, saveopts, bdist_egg, dist_info, alias, develop, editable_wheel, rotate, check, install_egg_info, build_scripts, symlink_data
+[76.994s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools 'develop' options: --site-dirs, --always-unzip, --index-url, --zip-ok, --exclude-scripts, --quiet, --user, --optimize, --install-dir, --upgrade, --uninstall, --no-user-cfg, --install-layout, --prefix, --always-copy, --editable, --dry-run, --script-dir, --find-links, --help, --no-deps, --verbose, --local-snapshots-ok, --allow-hosts, --version, --force-installation-into-system-dir, --egg-path, --no-find-links, --record, --build-directory, --multi-version
+[77.002s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mandy/Delivery-Bot/build/robot_bringup': AMENT_PREFIX_PATH=/home/mandy/Delivery-Bot/install/robot_control:/home/mandy/Delivery-Bot/install/robot_vision:/home/mandy/Delivery-Bot/install/robot_navigation:/home/mandy/Delivery-Bot/install/robot_description:/home/mandy/Delivery-Bot/install/robot_bringup:/home/mandy/Delivery-Bot/install/robot_interfaces:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/mandy/Delivery-Bot/build/robot_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mandy/Delivery-Bot/install/robot_bringup/lib/python3.12/site-packages:/home/mandy/Delivery-Bot/build/robot_control:/home/mandy/Delivery-Bot/install/robot_control/lib/python3.12/site-packages:/home/mandy/Delivery-Bot/build/robot_vision:/home/mandy/Delivery-Bot/install/robot_vision/lib/python3.12/site-packages:/home/mandy/Delivery-Bot/build/robot_navigation:/home/mandy/Delivery-Bot/install/robot_navigation/lib/python3.12/site-packages:/home/mandy/Delivery-Bot/install/robot_interfaces/lib/python3.12/site-packages:/home/mandy/Delivery-Bot/build/robot_description:/home/mandy/Delivery-Bot/install/robot_description/lib/python3.12/site-packages:/home/mandy/Delivery-Bot/build/robot_bringup:/home/mandy/Delivery-Bot/install/robot_bringup/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/mandy/Delivery-Bot/build/robot_bringup/build --no-deps symlink_data
+[80.502s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_bringup', 'pythonpath_develop')
+[80.503s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mandy/Delivery-Bot/build/robot_bringup/share/robot_bringup/hook/pythonpath_develop.dsv'
+[80.505s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mandy/Delivery-Bot/build/robot_bringup' returned '0': AMENT_PREFIX_PATH=/home/mandy/Delivery-Bot/install/robot_control:/home/mandy/Delivery-Bot/install/robot_vision:/home/mandy/Delivery-Bot/install/robot_navigation:/home/mandy/Delivery-Bot/install/robot_description:/home/mandy/Delivery-Bot/install/robot_bringup:/home/mandy/Delivery-Bot/install/robot_interfaces:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/mandy/Delivery-Bot/build/robot_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mandy/Delivery-Bot/install/robot_bringup/lib/python3.12/site-packages:/home/mandy/Delivery-Bot/build/robot_control:/home/mandy/Delivery-Bot/install/robot_control/lib/python3.12/site-packages:/home/mandy/Delivery-Bot/build/robot_vision:/home/mandy/Delivery-Bot/install/robot_vision/lib/python3.12/site-packages:/home/mandy/Delivery-Bot/build/robot_navigation:/home/mandy/Delivery-Bot/install/robot_navigation/lib/python3.12/site-packages:/home/mandy/Delivery-Bot/install/robot_interfaces/lib/python3.12/site-packages:/home/mandy/Delivery-Bot/build/robot_description:/home/mandy/Delivery-Bot/install/robot_description/lib/python3.12/site-packages:/home/mandy/Delivery-Bot/build/robot_bringup:/home/mandy/Delivery-Bot/install/robot_bringup/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/mandy/Delivery-Bot/build/robot_bringup/build --no-deps symlink_data
+[80.506s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mandy/Delivery-Bot/build/robot_bringup/share/robot_bringup/hook/pythonpath_develop.sh'
+[80.508s] Level 1:colcon.colcon_core.environment:checking '/home/mandy/Delivery-Bot/install/robot_bringup' for CMake module files
+[80.511s] Level 1:colcon.colcon_core.environment:checking '/home/mandy/Delivery-Bot/install/robot_bringup' for CMake config files
+[80.513s] Level 1:colcon.colcon_core.environment:checking '/home/mandy/Delivery-Bot/install/robot_bringup/lib'
+[80.514s] Level 1:colcon.colcon_core.environment:checking '/home/mandy/Delivery-Bot/install/robot_bringup/bin'
+[80.514s] Level 1:colcon.colcon_core.environment:checking '/home/mandy/Delivery-Bot/install/robot_bringup/lib/pkgconfig/robot_bringup.pc'
+[80.515s] Level 1:colcon.colcon_core.environment:checking '/home/mandy/Delivery-Bot/install/robot_bringup/lib/python3.12/site-packages'
+[80.516s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_bringup', 'pythonpath')
+[80.516s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mandy/Delivery-Bot/install/robot_bringup/share/robot_bringup/hook/pythonpath.dsv'
+[80.518s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mandy/Delivery-Bot/install/robot_bringup/share/robot_bringup/hook/pythonpath.sh'
+[80.521s] Level 1:colcon.colcon_core.environment:checking '/home/mandy/Delivery-Bot/install/robot_bringup/bin'
+[80.522s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_bringup)
+[80.523s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mandy/Delivery-Bot/install/robot_bringup/share/robot_bringup/package.dsv'
+[80.525s] INFO:colcon.colcon_core.shell:Creating package script '/home/mandy/Delivery-Bot/install/robot_bringup/share/robot_bringup/package.sh'
+[80.527s] INFO:colcon.colcon_core.shell:Creating package script '/home/mandy/Delivery-Bot/install/robot_bringup/share/robot_bringup/package.bash'
+[80.528s] INFO:colcon.colcon_core.shell:Creating package script '/home/mandy/Delivery-Bot/install/robot_bringup/share/robot_bringup/package.zsh'
+[80.529s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mandy/Delivery-Bot/install/robot_bringup/share/colcon-core/packages/robot_bringup)
+[80.531s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[80.532s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[80.533s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[80.533s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[80.567s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[80.568s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[80.568s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[80.632s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[80.633s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mandy/Delivery-Bot/install/local_setup.sh'
+[80.636s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/mandy/Delivery-Bot/install/_local_setup_util_sh.py'
+[80.641s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mandy/Delivery-Bot/install/setup.sh'
+[80.648s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mandy/Delivery-Bot/install/local_setup.bash'
+[80.651s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mandy/Delivery-Bot/install/setup.bash'
+[80.657s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mandy/Delivery-Bot/install/local_setup.zsh'
+[80.660s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mandy/Delivery-Bot/install/setup.zsh'

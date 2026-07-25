@@ -1,0 +1,24 @@
+[10.761s] Invoking command in '/home/mandy/Delivery-Bot/build/robot_vision': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/mandy/Delivery-Bot/build/robot_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mandy/Delivery-Bot/install/robot_vision/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/mandy/Delivery-Bot/build/robot_vision/build --no-deps symlink_data
+[13.582s] running develop
+[15.381s] running egg_info
+[15.383s] creating robot_vision.egg-info
+[15.545s] writing robot_vision.egg-info/PKG-INFO
+[15.545s] writing dependency_links to robot_vision.egg-info/dependency_links.txt
+[15.562s] writing entry points to robot_vision.egg-info/entry_points.txt
+[15.575s] writing requirements to robot_vision.egg-info/requires.txt
+[15.582s] writing top-level names to robot_vision.egg-info/top_level.txt
+[15.591s] writing manifest file 'robot_vision.egg-info/SOURCES.txt'
+[15.923s] reading manifest file 'robot_vision.egg-info/SOURCES.txt'
+[15.928s] writing manifest file 'robot_vision.egg-info/SOURCES.txt'
+[16.128s] running build_ext
+[16.133s] Creating /home/mandy/Delivery-Bot/install/robot_vision/lib/python3.12/site-packages/robot-vision.egg-link (link to .)
+[16.135s] Installing arducam_tof script to /home/mandy/Delivery-Bot/install/robot_vision/lib/robot_vision
+[16.140s] 
+[16.140s] Installed /home/mandy/Delivery-Bot/build/robot_vision
+[16.141s] running symlink_data
+[16.144s] creating /home/mandy/Delivery-Bot/install/robot_vision/share/ament_index
+[16.145s] creating /home/mandy/Delivery-Bot/install/robot_vision/share/ament_index/resource_index
+[16.145s] creating /home/mandy/Delivery-Bot/install/robot_vision/share/ament_index/resource_index/packages
+[16.149s] symbolically linking /home/mandy/Delivery-Bot/build/robot_vision/resource/robot_vision -> /home/mandy/Delivery-Bot/install/robot_vision/share/ament_index/resource_index/packages
+[16.149s] symbolically linking /home/mandy/Delivery-Bot/build/robot_vision/package.xml -> /home/mandy/Delivery-Bot/install/robot_vision/share/robot_vision
+[16.429s] Invoked command in '/home/mandy/Delivery-Bot/build/robot_vision' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/mandy/Delivery-Bot/build/robot_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mandy/Delivery-Bot/install/robot_vision/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/mandy/Delivery-Bot/build/robot_vision/build --no-deps symlink_data

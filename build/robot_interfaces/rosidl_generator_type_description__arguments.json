@@ -1,0 +1,7 @@
+{
+  "package_name": "robot_interfaces",
+  "output_dir": "/home/mandy/Delivery-Bot/build/robot_interfaces/rosidl_generator_type_description/robot_interfaces",
+  "idl_tuples": [
+    "/home/mandy/Delivery-Bot/build/robot_interfaces/rosidl_adapter/robot_interfaces:msg/EncoderSpeed.idl"
+  ]
+}

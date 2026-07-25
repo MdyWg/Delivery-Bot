@@ -1,0 +1,1 @@
+/home/mandy/Delivery-Bot/build/robot_interfaces/ament_cmake_core/robot_interfacesConfig-version.cmake

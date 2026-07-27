@@ -1,0 +1,18 @@
+[9.661s] Invoking command in '/home/mandy/Delivery-Bot/build/robot_control': AMENT_PREFIX_PATH=/home/mandy/Delivery-Bot/install/robot_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mandy/Delivery-Bot/install/robot_interfaces:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/mandy/Delivery-Bot/install/robot_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mandy/Delivery-Bot/build/robot_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mandy/Delivery-Bot/install/robot_control/lib/python3.12/site-packages:/home/mandy/Delivery-Bot/install/robot_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/mandy/Delivery-Bot/build/robot_control/build --no-deps symlink_data
+[12.106s] running develop
+[13.721s] running egg_info
+[13.816s] writing robot_control.egg-info/PKG-INFO
+[13.817s] writing dependency_links to robot_control.egg-info/dependency_links.txt
+[13.818s] writing entry points to robot_control.egg-info/entry_points.txt
+[13.819s] writing requirements to robot_control.egg-info/requires.txt
+[13.820s] writing top-level names to robot_control.egg-info/top_level.txt
+[14.015s] reading manifest file 'robot_control.egg-info/SOURCES.txt'
+[14.019s] writing manifest file 'robot_control.egg-info/SOURCES.txt'
+[14.122s] running build_ext
+[14.123s] Creating /home/mandy/Delivery-Bot/install/robot_control/lib/python3.12/site-packages/robot-control.egg-link (link to .)
+[14.126s] Installing odom_publisher script to /home/mandy/Delivery-Bot/install/robot_control/lib/robot_control
+[14.127s] Installing serial_comm script to /home/mandy/Delivery-Bot/install/robot_control/lib/robot_control
+[14.128s] 
+[14.129s] Installed /home/mandy/Delivery-Bot/build/robot_control
+[14.129s] running symlink_data
+[14.300s] Invoked command in '/home/mandy/Delivery-Bot/build/robot_control' returned '0': AMENT_PREFIX_PATH=/home/mandy/Delivery-Bot/install/robot_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mandy/Delivery-Bot/install/robot_interfaces:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/mandy/Delivery-Bot/install/robot_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mandy/Delivery-Bot/build/robot_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mandy/Delivery-Bot/install/robot_control/lib/python3.12/site-packages:/home/mandy/Delivery-Bot/install/robot_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/mandy/Delivery-Bot/build/robot_control/build --no-deps symlink_data

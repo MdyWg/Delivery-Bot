@@ -1,0 +1,520 @@
+[0.000000] (-) TimerEvent: {}
+[0.001007] (robot_description) JobQueued: {'identifier': 'robot_description', 'dependencies': OrderedDict()}
+[0.002257] (robot_interfaces) JobQueued: {'identifier': 'robot_interfaces', 'dependencies': OrderedDict()}
+[0.002890] (robot_navigation) JobQueued: {'identifier': 'robot_navigation', 'dependencies': OrderedDict()}
+[0.003520] (robot_vision) JobQueued: {'identifier': 'robot_vision', 'dependencies': OrderedDict()}
+[0.003782] (robot_control) JobQueued: {'identifier': 'robot_control', 'dependencies': OrderedDict({'robot_interfaces': '/home/mandy/Delivery-Bot/install/robot_interfaces'})}
+[0.004080] (robot_bringup) JobQueued: {'identifier': 'robot_bringup', 'dependencies': OrderedDict({'robot_description': '/home/mandy/Delivery-Bot/install/robot_description', 'robot_interfaces': '/home/mandy/Delivery-Bot/install/robot_interfaces', 'robot_navigation': '/home/mandy/Delivery-Bot/install/robot_navigation', 'robot_vision': '/home/mandy/Delivery-Bot/install/robot_vision', 'robot_control': '/home/mandy/Delivery-Bot/install/robot_control'})}
+[0.005066] (robot_interfaces) JobStarted: {'identifier': 'robot_interfaces'}
+[0.073128] (robot_description) JobStarted: {'identifier': 'robot_description'}
+[0.098666] (-) TimerEvent: {}
+[0.109600] (robot_navigation) JobStarted: {'identifier': 'robot_navigation'}
+[0.142786] (robot_vision) JobStarted: {'identifier': 'robot_vision'}
+[0.186562] (robot_interfaces) JobProgress: {'identifier': 'robot_interfaces', 'progress': 'cmake'}
+[0.196062] (robot_interfaces) JobProgress: {'identifier': 'robot_interfaces', 'progress': 'build'}
+[0.196319] (robot_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mandy/Delivery-Bot/build/robot_interfaces', '--', '-j4', '-l4'], 'cwd': '/home/mandy/Delivery-Bot/build/robot_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'mandy', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/mandy', 'OLDPWD': '/home/mandy', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2386', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'mandy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'mandy', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/mandy-desktop:@/tmp/.ICE-unix/2360,unix/mandy-desktop:/tmp/.ICE-unix/2360', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/1d96b87d_4a91_42af_ac95_8773b62bd0ef', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.VCV4S3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.109', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/mandy/Delivery-Bot/build/robot_interfaces', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.202657] (-) TimerEvent: {}
+[0.307753] (-) TimerEvent: {}
+[0.408492] (-) TimerEvent: {}
+[0.509276] (-) TimerEvent: {}
+[0.613719] (-) TimerEvent: {}
+[0.714892] (-) TimerEvent: {}
+[0.817161] (-) TimerEvent: {}
+[0.918032] (-) TimerEvent: {}
+[1.020730] (-) TimerEvent: {}
+[1.123702] (-) TimerEvent: {}
+[1.227925] (-) TimerEvent: {}
+[1.328865] (-) TimerEvent: {}
+[1.431692] (-) TimerEvent: {}
+[1.532513] (-) TimerEvent: {}
+[1.633626] (-) TimerEvent: {}
+[1.736105] (-) TimerEvent: {}
+[1.837585] (-) TimerEvent: {}
+[1.941484] (-) TimerEvent: {}
+[2.042754] (-) TimerEvent: {}
+[2.143636] (-) TimerEvent: {}
+[2.246667] (-) TimerEvent: {}
+[2.347390] (-) TimerEvent: {}
+[2.448214] (-) TimerEvent: {}
+[2.550719] (-) TimerEvent: {}
+[2.651648] (-) TimerEvent: {}
+[2.752448] (-) TimerEvent: {}
+[2.853278] (-) TimerEvent: {}
+[2.954318] (-) TimerEvent: {}
+[3.055305] (-) TimerEvent: {}
+[3.156624] (-) TimerEvent: {}
+[3.236874] (robot_interfaces) StdoutLine: {'line': b'[  5%] Built target robot_interfaces__rs\n'}
+[3.243804] (robot_interfaces) StdoutLine: {'line': b'[  5%] Built target robot_interfaces__rosidl_generator_type_description\n'}
+[3.246991] (robot_interfaces) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_symlink_robot_interfaces\n'}
+[3.247480] (robot_interfaces) StdoutLine: {'line': b'[  8%] Built target robot_interfaces__cpp\n'}
+[3.248012] (robot_interfaces) StdoutLine: {'line': b'[ 22%] Built target robot_interfaces__rosidl_generator_c\n'}
+[3.248431] (robot_interfaces) StdoutLine: {'line': b'[ 40%] Built target robot_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[3.249029] (robot_interfaces) StdoutLine: {'line': b'[ 40%] Built target robot_interfaces__rosidl_typesupport_c\n'}
+[3.249509] (robot_interfaces) StdoutLine: {'line': b'[ 48%] Built target robot_interfaces__rosidl_typesupport_introspection_c\n'}
+[3.250027] (robot_interfaces) StdoutLine: {'line': b'[ 57%] Built target robot_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[3.250426] (robot_interfaces) StdoutLine: {'line': b'[ 65%] Built target robot_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[3.251005] (robot_interfaces) StdoutLine: {'line': b'[ 74%] Built target robot_interfaces__rosidl_typesupport_cpp\n'}
+[3.251443] (robot_interfaces) StdoutLine: {'line': b'[ 74%] Built target robot_interfaces\n'}
+[3.252374] (robot_interfaces) StdoutLine: {'line': b'[ 77%] Built target robot_interfaces__py\n'}
+[3.252953] (robot_interfaces) StdoutLine: {'line': b'[ 82%] Built target robot_interfaces__rosidl_generator_py\n'}
+[3.253415] (robot_interfaces) StdoutLine: {'line': b'[ 88%] Built target robot_interfaces_s__rosidl_typesupport_introspection_c\n'}
+[3.253990] (robot_interfaces) StdoutLine: {'line': b'[ 94%] Built target robot_interfaces_s__rosidl_typesupport_fastrtps_c\n'}
+[3.254586] (robot_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[3.255163] (robot_interfaces) StdoutLine: {'line': b'[100%] Built target robot_interfaces_s__rosidl_typesupport_c\n'}
+[3.255740] (robot_interfaces) StdoutLine: {'line': b'writing robot_interfaces.egg-info/PKG-INFO\n'}
+[3.256335] (robot_interfaces) StdoutLine: {'line': b'writing dependency_links to robot_interfaces.egg-info/dependency_links.txt\n'}
+[3.256995] (-) TimerEvent: {}
+[3.257483] (robot_interfaces) StdoutLine: {'line': b'writing top-level names to robot_interfaces.egg-info/top_level.txt\n'}
+[3.258284] (robot_interfaces) StdoutLine: {'line': b"reading manifest file 'robot_interfaces.egg-info/SOURCES.txt'\n"}
+[3.259028] (robot_interfaces) StdoutLine: {'line': b"writing manifest file 'robot_interfaces.egg-info/SOURCES.txt'\n"}
+[3.305141] (robot_interfaces) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_robot_interfaces_egg\n'}
+[3.357192] (-) TimerEvent: {}
+[3.458085] (-) TimerEvent: {}
+[3.559138] (-) TimerEvent: {}
+[3.659845] (-) TimerEvent: {}
+[3.760516] (-) TimerEvent: {}
+[3.861208] (-) TimerEvent: {}
+[3.961896] (-) TimerEvent: {}
+[4.062522] (-) TimerEvent: {}
+[4.163304] (-) TimerEvent: {}
+[4.264276] (-) TimerEvent: {}
+[4.318710] (robot_interfaces) CommandEnded: {'returncode': 0}
+[4.325571] (robot_interfaces) JobProgress: {'identifier': 'robot_interfaces', 'progress': 'install'}
+[4.364497] (-) TimerEvent: {}
+[4.413052] (robot_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/mandy/Delivery-Bot/build/robot_interfaces'], 'cwd': '/home/mandy/Delivery-Bot/build/robot_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'mandy', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/mandy', 'OLDPWD': '/home/mandy', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2386', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'mandy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'mandy', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/mandy-desktop:@/tmp/.ICE-unix/2360,unix/mandy-desktop:/tmp/.ICE-unix/2360', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/1d96b87d_4a91_42af_ac95_8773b62bd0ef', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.VCV4S3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.109', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/mandy/Delivery-Bot/build/robot_interfaces', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[4.467700] (-) TimerEvent: {}
+[4.506811] (robot_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.512976] (robot_interfaces) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[4.518367] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/share/ament_index/resource_index/rosidl_interfaces/robot_interfaces\n'}
+[4.524585] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/msg/EncoderSpeed.json\n'}
+[4.533261] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/encoder_speed__functions.h\n'}
+[4.538676] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/encoder_speed__struct.h\n'}
+[4.541714] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/encoder_speed__type_support.h\n'}
+[4.545791] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/encoder_speed.h\n'}
+[4.546725] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[4.549917] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/environment/library_path.sh\n'}
+[4.558686] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/environment/library_path.dsv\n'}
+[4.560040] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/encoder_speed__rosidl_typesupport_fastrtps_c.h\n'}
+[4.563731] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[4.566809] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/encoder_speed__rosidl_typesupport_introspection_c.h\n'}
+[4.567691] (-) TimerEvent: {}
+[4.570570] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[4.575314] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/encoder_speed__builder.hpp\n'}
+[4.579789] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/encoder_speed__struct.hpp\n'}
+[4.587806] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/encoder_speed__traits.hpp\n'}
+[4.590149] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/encoder_speed__type_support.hpp\n'}
+[4.596112] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/encoder_speed.hpp\n'}
+[4.597224] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[4.603676] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/encoder_speed__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.605834] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[4.611651] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/encoder_speed__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.612425] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/environment/pythonpath.sh\n'}
+[4.615682] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/environment/pythonpath.dsv\n'}
+[4.622685] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/lib/python3.12/site-packages/robot_interfaces-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[4.623576] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/lib/python3.12/site-packages/robot_interfaces-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[4.626666] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/lib/python3.12/site-packages/robot_interfaces-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[4.628519] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/lib/python3.12/site-packages/robot_interfaces-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[4.639681] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/lib/python3.12/site-packages/robot_interfaces/__init__.py\n'}
+[4.640751] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/lib/python3.12/site-packages/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[4.641561] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/lib/python3.12/site-packages/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[4.644688] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/lib/python3.12/site-packages/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[4.645885] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/lib/python3.12/site-packages/robot_interfaces/msg/__init__.py\n'}
+[4.649715] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/lib/python3.12/site-packages/robot_interfaces/msg/_encoder_speed.py\n'}
+[4.653665] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/lib/python3.12/site-packages/robot_interfaces/msg/_encoder_speed_s.c\n'}
+[4.654425] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/lib/python3.12/site-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_c.so\n'}
+[4.657709] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/lib/python3.12/site-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[4.663697] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/lib/python3.12/site-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[4.664589] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/lib/python3.12/site-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[4.667971] (-) TimerEvent: {}
+[4.668746] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/lib/python3.12/site-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[4.674689] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/lib/python3.12/site-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_c.so\n'}
+[4.681379] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/share/ament_index/resource_index/rust_packages/robot_interfaces\n'}
+[4.682457] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/rust/Cargo.toml\n'}
+[4.688671] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/rust/build.rs\n'}
+[4.689688] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/rust/src/lib.rs\n'}
+[4.690447] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/rust/src/msg.rs\n'}
+[4.696681] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/rust/src/msg/rmw.rs\n'}
+[4.697515] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/msg/EncoderSpeed.idl\n'}
+[4.698846] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/msg/EncoderSpeed.msg\n'}
+[4.704637] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/share/ament_index/resource_index/package_run_dependencies/robot_interfaces\n'}
+[4.705511] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/share/ament_index/resource_index/parent_prefix_path/robot_interfaces\n'}
+[4.707266] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/environment/ament_prefix_path.sh\n'}
+[4.712709] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/environment/ament_prefix_path.dsv\n'}
+[4.713675] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/environment/path.sh\n'}
+[4.715733] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/environment/path.dsv\n'}
+[4.721682] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/local_setup.bash\n'}
+[4.722693] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/local_setup.sh\n'}
+[4.725429] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/local_setup.zsh\n'}
+[4.729033] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/local_setup.dsv\n'}
+[4.731688] (robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/package.dsv\n'}
+[4.768169] (-) TimerEvent: {}
+[4.822392] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/share/ament_index/resource_index/packages/robot_interfaces\n'}
+[4.825176] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[4.829943] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[4.831047] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[4.848940] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[4.856012] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[4.859429] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[4.871881] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[4.872688] (-) TimerEvent: {}
+[4.873364] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/cmake/rosidl_cmake_aggregate_target-extras.cmake\n'}
+[4.874165] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfacesConfig.cmake\n'}
+[4.874825] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfacesConfig-version.cmake\n'}
+[4.875382] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/package.xml\n'}
+[4.879142] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mandy/Delivery-Bot/install/robot_interfaces/lib/librobot_interfaces__rosidl_generator_c.so\n'}
+[4.879778] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mandy/Delivery-Bot/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[4.882101] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mandy/Delivery-Bot/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[4.886820] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mandy/Delivery-Bot/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_c.so\n'}
+[4.890226] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mandy/Delivery-Bot/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[4.892161] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mandy/Delivery-Bot/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[4.906477] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mandy/Delivery-Bot/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_cpp.so\n'}
+[4.975665] (-) TimerEvent: {}
+[5.076481] (-) TimerEvent: {}
+[5.135815] (robot_interfaces) StdoutLine: {'line': b"Listing '/home/mandy/Delivery-Bot/install/robot_interfaces/lib/python3.12/site-packages/robot_interfaces'...\n"}
+[5.146179] (robot_interfaces) StdoutLine: {'line': b"Listing '/home/mandy/Delivery-Bot/install/robot_interfaces/lib/python3.12/site-packages/robot_interfaces/msg'...\n"}
+[5.176704] (-) TimerEvent: {}
+[5.194071] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mandy/Delivery-Bot/install/robot_interfaces/lib/librobot_interfaces__rosidl_generator_py.so\n'}
+[5.198996] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_generator_cExport.cmake\n'}
+[5.201057] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[5.205011] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[5.207084] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[5.212321] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[5.214302] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[5.218337] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[5.220198] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[5.226477] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_generator_cppExport.cmake\n'}
+[5.230379] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[5.233463] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[5.235930] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[5.237887] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[5.241707] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[5.243585] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[5.247828] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_generator_pyExport.cmake\n'}
+[5.249078] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mandy/Delivery-Bot/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[5.263125] (robot_interfaces) CommandEnded: {'returncode': 0}
+[5.277015] (-) TimerEvent: {}
+[5.381667] (-) TimerEvent: {}
+[5.451482] (robot_interfaces) JobEnded: {'identifier': 'robot_interfaces', 'rc': 0}
+[5.455862] (robot_control) JobStarted: {'identifier': 'robot_control'}
+[5.484651] (-) TimerEvent: {}
+[5.585759] (-) TimerEvent: {}
+[5.690681] (-) TimerEvent: {}
+[5.791850] (-) TimerEvent: {}
+[5.893262] (-) TimerEvent: {}
+[5.994422] (-) TimerEvent: {}
+[6.098353] (-) TimerEvent: {}
+[6.200640] (-) TimerEvent: {}
+[6.301702] (-) TimerEvent: {}
+[6.402682] (-) TimerEvent: {}
+[6.503400] (-) TimerEvent: {}
+[6.604674] (-) TimerEvent: {}
+[6.706277] (-) TimerEvent: {}
+[6.807068] (-) TimerEvent: {}
+[6.908779] (-) TimerEvent: {}
+[7.010175] (-) TimerEvent: {}
+[7.112185] (-) TimerEvent: {}
+[7.215235] (-) TimerEvent: {}
+[7.316111] (-) TimerEvent: {}
+[7.417003] (-) TimerEvent: {}
+[7.520675] (-) TimerEvent: {}
+[7.621573] (-) TimerEvent: {}
+[7.722858] (-) TimerEvent: {}
+[7.825979] (-) TimerEvent: {}
+[7.929997] (-) TimerEvent: {}
+[8.031238] (-) TimerEvent: {}
+[8.133411] (-) TimerEvent: {}
+[8.236389] (-) TimerEvent: {}
+[8.341021] (-) TimerEvent: {}
+[8.445096] (-) TimerEvent: {}
+[8.546356] (-) TimerEvent: {}
+[8.650011] (-) TimerEvent: {}
+[8.755010] (-) TimerEvent: {}
+[8.856318] (-) TimerEvent: {}
+[8.959079] (-) TimerEvent: {}
+[9.061989] (-) TimerEvent: {}
+[9.166041] (-) TimerEvent: {}
+[9.267683] (-) TimerEvent: {}
+[9.374010] (-) TimerEvent: {}
+[9.475416] (-) TimerEvent: {}
+[9.580244] (-) TimerEvent: {}
+[9.685452] (-) TimerEvent: {}
+[9.789742] (-) TimerEvent: {}
+[9.894248] (-) TimerEvent: {}
+[9.995228] (-) TimerEvent: {}
+[10.098420] (-) TimerEvent: {}
+[10.201692] (-) TimerEvent: {}
+[10.302884] (-) TimerEvent: {}
+[10.405368] (-) TimerEvent: {}
+[10.506598] (-) TimerEvent: {}
+[10.637749] (-) TimerEvent: {}
+[10.740995] (-) TimerEvent: {}
+[10.846030] (-) TimerEvent: {}
+[10.947268] (-) TimerEvent: {}
+[11.049056] (-) TimerEvent: {}
+[11.154028] (-) TimerEvent: {}
+[11.255363] (-) TimerEvent: {}
+[11.359013] (-) TimerEvent: {}
+[11.460420] (-) TimerEvent: {}
+[11.561813] (-) TimerEvent: {}
+[11.665434] (-) TimerEvent: {}
+[11.766818] (-) TimerEvent: {}
+[11.870128] (-) TimerEvent: {}
+[11.972064] (-) TimerEvent: {}
+[12.074673] (-) TimerEvent: {}
+[12.177570] (-) TimerEvent: {}
+[12.280835] (-) TimerEvent: {}
+[12.382621] (-) TimerEvent: {}
+[12.486739] (-) TimerEvent: {}
+[12.516567] (robot_description) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/mandy/Delivery-Bot/build/robot_description/build', '--no-deps', 'symlink_data'], 'cwd': '/home/mandy/Delivery-Bot/build/robot_description', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'mandy', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/mandy', 'OLDPWD': '/home/mandy', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2386', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'mandy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'mandy', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/mandy-desktop:@/tmp/.ICE-unix/2360,unix/mandy-desktop:/tmp/.ICE-unix/2360', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/1d96b87d_4a91_42af_ac95_8773b62bd0ef', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.VCV4S3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.109', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/mandy/Delivery-Bot/build/robot_description', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/mandy/Delivery-Bot/build/robot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mandy/Delivery-Bot/install/robot_description/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[12.587013] (-) TimerEvent: {}
+[12.622877] (robot_navigation) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/mandy/Delivery-Bot/build/robot_navigation/build', '--no-deps', 'symlink_data'], 'cwd': '/home/mandy/Delivery-Bot/build/robot_navigation', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'mandy', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/mandy', 'OLDPWD': '/home/mandy', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2386', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'mandy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'mandy', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/mandy-desktop:@/tmp/.ICE-unix/2360,unix/mandy-desktop:/tmp/.ICE-unix/2360', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/1d96b87d_4a91_42af_ac95_8773b62bd0ef', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.VCV4S3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.109', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/mandy/Delivery-Bot/build/robot_navigation', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/mandy/Delivery-Bot/build/robot_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mandy/Delivery-Bot/install/robot_navigation/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[12.687284] (-) TimerEvent: {}
+[12.790801] (-) TimerEvent: {}
+[12.833816] (robot_vision) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/mandy/Delivery-Bot/build/robot_vision/build', '--no-deps', 'symlink_data'], 'cwd': '/home/mandy/Delivery-Bot/build/robot_vision', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'mandy', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/mandy', 'OLDPWD': '/home/mandy', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2386', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'mandy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'mandy', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/mandy-desktop:@/tmp/.ICE-unix/2360,unix/mandy-desktop:/tmp/.ICE-unix/2360', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/1d96b87d_4a91_42af_ac95_8773b62bd0ef', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.VCV4S3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.109', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/mandy/Delivery-Bot/build/robot_vision', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/mandy/Delivery-Bot/build/robot_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mandy/Delivery-Bot/install/robot_vision/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[12.891140] (-) TimerEvent: {}
+[12.995717] (-) TimerEvent: {}
+[13.096990] (-) TimerEvent: {}
+[13.201110] (-) TimerEvent: {}
+[13.304962] (-) TimerEvent: {}
+[13.409019] (-) TimerEvent: {}
+[13.510780] (-) TimerEvent: {}
+[13.615973] (-) TimerEvent: {}
+[13.717223] (-) TimerEvent: {}
+[13.821039] (-) TimerEvent: {}
+[13.927016] (-) TimerEvent: {}
+[14.028250] (-) TimerEvent: {}
+[14.132064] (-) TimerEvent: {}
+[14.236870] (-) TimerEvent: {}
+[14.338098] (-) TimerEvent: {}
+[14.439209] (-) TimerEvent: {}
+[14.543443] (-) TimerEvent: {}
+[14.644596] (-) TimerEvent: {}
+[14.745738] (-) TimerEvent: {}
+[14.848048] (-) TimerEvent: {}
+[14.950730] (-) TimerEvent: {}
+[15.052354] (-) TimerEvent: {}
+[15.092612] (robot_control) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/mandy/Delivery-Bot/build/robot_control/build', '--no-deps', 'symlink_data'], 'cwd': '/home/mandy/Delivery-Bot/build/robot_control', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'mandy', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/mandy/Delivery-Bot/install/robot_interfaces/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/mandy', 'OLDPWD': '/home/mandy', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2386', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'mandy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'mandy', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/mandy-desktop:@/tmp/.ICE-unix/2360,unix/mandy-desktop:/tmp/.ICE-unix/2360', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/1d96b87d_4a91_42af_ac95_8773b62bd0ef', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.VCV4S3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.109', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/mandy/Delivery-Bot/install/robot_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/mandy/Delivery-Bot/build/robot_control', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/mandy/Delivery-Bot/build/robot_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mandy/Delivery-Bot/install/robot_control/lib/python3.12/site-packages:/home/mandy/Delivery-Bot/install/robot_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/mandy/Delivery-Bot/install/robot_interfaces:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[15.143813] (robot_description) StdoutLine: {'line': b'running develop\n'}
+[15.152567] (-) TimerEvent: {}
+[15.256294] (-) TimerEvent: {}
+[15.294842] (robot_navigation) StdoutLine: {'line': b'running develop\n'}
+[15.356516] (-) TimerEvent: {}
+[15.457688] (-) TimerEvent: {}
+[15.558769] (-) TimerEvent: {}
+[15.566117] (robot_vision) StdoutLine: {'line': b'running develop\n'}
+[15.660688] (-) TimerEvent: {}
+[15.763804] (-) TimerEvent: {}
+[15.864954] (-) TimerEvent: {}
+[15.966175] (-) TimerEvent: {}
+[16.070279] (-) TimerEvent: {}
+[16.171515] (-) TimerEvent: {}
+[16.272793] (-) TimerEvent: {}
+[16.377106] (-) TimerEvent: {}
+[16.478194] (-) TimerEvent: {}
+[16.579087] (-) TimerEvent: {}
+[16.682692] (-) TimerEvent: {}
+[16.783791] (-) TimerEvent: {}
+[16.866612] (robot_description) StdoutLine: {'line': b'running egg_info\n'}
+[16.883970] (-) TimerEvent: {}
+[16.986419] (-) TimerEvent: {}
+[17.034828] (robot_description) StdoutLine: {'line': b'writing robot_description.egg-info/PKG-INFO\n'}
+[17.040330] (robot_description) StdoutLine: {'line': b'writing dependency_links to robot_description.egg-info/dependency_links.txt\n'}
+[17.045144] (robot_description) StdoutLine: {'line': b'writing requirements to robot_description.egg-info/requires.txt\n'}
+[17.049446] (robot_description) StdoutLine: {'line': b'writing top-level names to robot_description.egg-info/top_level.txt\n'}
+[17.081499] (robot_navigation) StdoutLine: {'line': b'running egg_info\n'}
+[17.088686] (-) TimerEvent: {}
+[17.189686] (-) TimerEvent: {}
+[17.222716] (robot_navigation) StdoutLine: {'line': b'writing robot_navigation.egg-info/PKG-INFO\n'}
+[17.227037] (robot_navigation) StdoutLine: {'line': b'writing dependency_links to robot_navigation.egg-info/dependency_links.txt\n'}
+[17.231188] (robot_navigation) StdoutLine: {'line': b'writing requirements to robot_navigation.egg-info/requires.txt\n'}
+[17.232078] (robot_navigation) StdoutLine: {'line': b'writing top-level names to robot_navigation.egg-info/top_level.txt\n'}
+[17.292747] (-) TimerEvent: {}
+[17.350071] (robot_vision) StdoutLine: {'line': b'running egg_info\n'}
+[17.371900] (robot_description) StdoutLine: {'line': b"reading manifest file 'robot_description.egg-info/SOURCES.txt'\n"}
+[17.379390] (robot_description) StdoutLine: {'line': b"writing manifest file 'robot_description.egg-info/SOURCES.txt'\n"}
+[17.394667] (-) TimerEvent: {}
+[17.495853] (-) TimerEvent: {}
+[17.532436] (robot_vision) StdoutLine: {'line': b'writing robot_vision.egg-info/PKG-INFO\n'}
+[17.538174] (robot_vision) StdoutLine: {'line': b'writing dependency_links to robot_vision.egg-info/dependency_links.txt\n'}
+[17.538903] (robot_vision) StdoutLine: {'line': b'writing entry points to robot_vision.egg-info/entry_points.txt\n'}
+[17.539640] (robot_vision) StdoutLine: {'line': b'writing requirements to robot_vision.egg-info/requires.txt\n'}
+[17.545699] (robot_vision) StdoutLine: {'line': b'writing top-level names to robot_vision.egg-info/top_level.txt\n'}
+[17.550726] (robot_navigation) StdoutLine: {'line': b"reading manifest file 'robot_navigation.egg-info/SOURCES.txt'\n"}
+[17.558692] (robot_description) StdoutLine: {'line': b'running build_ext\n'}
+[17.559459] (robot_description) StdoutLine: {'line': b'Creating /home/mandy/Delivery-Bot/install/robot_description/lib/python3.12/site-packages/robot-description.egg-link (link to .)\n'}
+[17.561117] (robot_navigation) StdoutLine: {'line': b"writing manifest file 'robot_navigation.egg-info/SOURCES.txt'\n"}
+[17.562288] (robot_control) StdoutLine: {'line': b'running develop\n'}
+[17.567679] (robot_description) StdoutLine: {'line': b'\n'}
+[17.568490] (robot_description) StdoutLine: {'line': b'Installed /home/mandy/Delivery-Bot/build/robot_description\n'}
+[17.569195] (robot_description) StdoutLine: {'line': b'running symlink_data\n'}
+[17.598727] (-) TimerEvent: {}
+[17.699508] (-) TimerEvent: {}
+[17.793033] (robot_description) CommandEnded: {'returncode': 0}
+[17.800106] (-) TimerEvent: {}
+[17.818716] (robot_navigation) StdoutLine: {'line': b'running build_ext\n'}
+[17.820068] (robot_navigation) StdoutLine: {'line': b'Creating /home/mandy/Delivery-Bot/install/robot_navigation/lib/python3.12/site-packages/robot-navigation.egg-link (link to .)\n'}
+[17.847712] (robot_navigation) StdoutLine: {'line': b'\n'}
+[17.848615] (robot_navigation) StdoutLine: {'line': b'Installed /home/mandy/Delivery-Bot/build/robot_navigation\n'}
+[17.849282] (robot_navigation) StdoutLine: {'line': b'running symlink_data\n'}
+[17.860493] (robot_description) JobEnded: {'identifier': 'robot_description', 'rc': 0}
+[17.900412] (-) TimerEvent: {}
+[18.002744] (-) TimerEvent: {}
+[18.013169] (robot_vision) StdoutLine: {'line': b"reading manifest file 'robot_vision.egg-info/SOURCES.txt'\n"}
+[18.023726] (robot_vision) StdoutLine: {'line': b"writing manifest file 'robot_vision.egg-info/SOURCES.txt'\n"}
+[18.068792] (robot_navigation) CommandEnded: {'returncode': 0}
+[18.103253] (-) TimerEvent: {}
+[18.107129] (robot_navigation) JobEnded: {'identifier': 'robot_navigation', 'rc': 0}
+[18.180841] (robot_vision) StdoutLine: {'line': b'running build_ext\n'}
+[18.183190] (robot_vision) StdoutLine: {'line': b'Creating /home/mandy/Delivery-Bot/install/robot_vision/lib/python3.12/site-packages/robot-vision.egg-link (link to .)\n'}
+[18.184941] (robot_vision) StdoutLine: {'line': b'Installing arducam_tof script to /home/mandy/Delivery-Bot/install/robot_vision/lib/robot_vision\n'}
+[18.187330] (robot_vision) StdoutLine: {'line': b'\n'}
+[18.189926] (robot_vision) StdoutLine: {'line': b'Installed /home/mandy/Delivery-Bot/build/robot_vision\n'}
+[18.191639] (robot_vision) StdoutLine: {'line': b'running symlink_data\n'}
+[18.203497] (-) TimerEvent: {}
+[18.304871] (-) TimerEvent: {}
+[18.380888] (robot_vision) CommandEnded: {'returncode': 0}
+[18.405022] (-) TimerEvent: {}
+[18.419187] (robot_vision) JobEnded: {'identifier': 'robot_vision', 'rc': 0}
+[18.505183] (-) TimerEvent: {}
+[18.605784] (-) TimerEvent: {}
+[18.706410] (-) TimerEvent: {}
+[18.807030] (-) TimerEvent: {}
+[18.907647] (-) TimerEvent: {}
+[19.008222] (-) TimerEvent: {}
+[19.108832] (-) TimerEvent: {}
+[19.177713] (robot_control) StdoutLine: {'line': b'running egg_info\n'}
+[19.208975] (-) TimerEvent: {}
+[19.272202] (robot_control) StdoutLine: {'line': b'writing robot_control.egg-info/PKG-INFO\n'}
+[19.273455] (robot_control) StdoutLine: {'line': b'writing dependency_links to robot_control.egg-info/dependency_links.txt\n'}
+[19.274700] (robot_control) StdoutLine: {'line': b'writing entry points to robot_control.egg-info/entry_points.txt\n'}
+[19.275705] (robot_control) StdoutLine: {'line': b'writing requirements to robot_control.egg-info/requires.txt\n'}
+[19.276623] (robot_control) StdoutLine: {'line': b'writing top-level names to robot_control.egg-info/top_level.txt\n'}
+[19.309109] (-) TimerEvent: {}
+[19.409692] (-) TimerEvent: {}
+[19.471726] (robot_control) StdoutLine: {'line': b"reading manifest file 'robot_control.egg-info/SOURCES.txt'\n"}
+[19.475629] (robot_control) StdoutLine: {'line': b"writing manifest file 'robot_control.egg-info/SOURCES.txt'\n"}
+[19.509844] (-) TimerEvent: {}
+[19.578496] (robot_control) StdoutLine: {'line': b'running build_ext\n'}
+[19.579473] (robot_control) StdoutLine: {'line': b'Creating /home/mandy/Delivery-Bot/install/robot_control/lib/python3.12/site-packages/robot-control.egg-link (link to .)\n'}
+[19.582237] (robot_control) StdoutLine: {'line': b'Installing odom_publisher script to /home/mandy/Delivery-Bot/install/robot_control/lib/robot_control\n'}
+[19.583360] (robot_control) StdoutLine: {'line': b'Installing serial_comm script to /home/mandy/Delivery-Bot/install/robot_control/lib/robot_control\n'}
+[19.584901] (robot_control) StdoutLine: {'line': b'\n'}
+[19.585628] (robot_control) StdoutLine: {'line': b'Installed /home/mandy/Delivery-Bot/build/robot_control\n'}
+[19.586096] (robot_control) StdoutLine: {'line': b'running symlink_data\n'}
+[19.610076] (-) TimerEvent: {}
+[19.710965] (-) TimerEvent: {}
+[19.755154] (robot_control) CommandEnded: {'returncode': 0}
+[19.793183] (robot_control) JobEnded: {'identifier': 'robot_control', 'rc': 0}
+[19.797369] (robot_bringup) JobStarted: {'identifier': 'robot_bringup'}
+[19.811159] (-) TimerEvent: {}
+[19.911880] (-) TimerEvent: {}
+[20.012671] (-) TimerEvent: {}
+[20.113322] (-) TimerEvent: {}
+[20.214006] (-) TimerEvent: {}
+[20.314655] (-) TimerEvent: {}
+[20.415383] (-) TimerEvent: {}
+[20.516045] (-) TimerEvent: {}
+[20.616638] (-) TimerEvent: {}
+[20.717322] (-) TimerEvent: {}
+[20.818000] (-) TimerEvent: {}
+[20.918763] (-) TimerEvent: {}
+[21.019719] (-) TimerEvent: {}
+[21.120483] (-) TimerEvent: {}
+[21.221182] (-) TimerEvent: {}
+[21.321868] (-) TimerEvent: {}
+[21.422619] (-) TimerEvent: {}
+[21.523223] (-) TimerEvent: {}
+[21.623902] (-) TimerEvent: {}
+[21.724500] (-) TimerEvent: {}
+[21.825117] (-) TimerEvent: {}
+[21.925708] (-) TimerEvent: {}
+[22.026303] (-) TimerEvent: {}
+[22.126982] (-) TimerEvent: {}
+[22.227672] (-) TimerEvent: {}
+[22.328317] (-) TimerEvent: {}
+[22.428974] (-) TimerEvent: {}
+[22.529750] (-) TimerEvent: {}
+[22.630309] (-) TimerEvent: {}
+[22.730948] (-) TimerEvent: {}
+[22.831710] (-) TimerEvent: {}
+[22.932575] (-) TimerEvent: {}
+[23.033170] (-) TimerEvent: {}
+[23.133788] (-) TimerEvent: {}
+[23.234371] (-) TimerEvent: {}
+[23.335014] (-) TimerEvent: {}
+[23.435623] (-) TimerEvent: {}
+[23.536271] (-) TimerEvent: {}
+[23.636919] (-) TimerEvent: {}
+[23.737597] (-) TimerEvent: {}
+[23.838209] (-) TimerEvent: {}
+[23.938918] (-) TimerEvent: {}
+[24.039883] (-) TimerEvent: {}
+[24.140645] (-) TimerEvent: {}
+[24.241229] (-) TimerEvent: {}
+[24.341913] (-) TimerEvent: {}
+[24.442583] (-) TimerEvent: {}
+[24.543304] (-) TimerEvent: {}
+[24.644186] (-) TimerEvent: {}
+[24.744917] (-) TimerEvent: {}
+[24.845519] (-) TimerEvent: {}
+[24.946125] (-) TimerEvent: {}
+[25.046758] (-) TimerEvent: {}
+[25.147366] (-) TimerEvent: {}
+[25.248002] (-) TimerEvent: {}
+[25.348625] (-) TimerEvent: {}
+[25.449214] (-) TimerEvent: {}
+[25.549884] (-) TimerEvent: {}
+[25.650523] (-) TimerEvent: {}
+[25.751325] (-) TimerEvent: {}
+[25.850116] (robot_bringup) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/mandy/Delivery-Bot/build/robot_bringup/build', '--no-deps', 'symlink_data'], 'cwd': '/home/mandy/Delivery-Bot/build/robot_bringup', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'mandy', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/mandy/Delivery-Bot/install/robot_interfaces/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/mandy', 'OLDPWD': '/home/mandy', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2386', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'mandy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'mandy', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/mandy-desktop:@/tmp/.ICE-unix/2360,unix/mandy-desktop:/tmp/.ICE-unix/2360', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/1d96b87d_4a91_42af_ac95_8773b62bd0ef', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.VCV4S3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.109', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/mandy/Delivery-Bot/install/robot_control:/home/mandy/Delivery-Bot/install/robot_vision:/home/mandy/Delivery-Bot/install/robot_navigation:/home/mandy/Delivery-Bot/install/robot_interfaces:/home/mandy/Delivery-Bot/install/robot_description:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/mandy/Delivery-Bot/build/robot_bringup', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/mandy/Delivery-Bot/build/robot_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mandy/Delivery-Bot/install/robot_bringup/lib/python3.12/site-packages:/home/mandy/Delivery-Bot/build/robot_control:/home/mandy/Delivery-Bot/install/robot_control/lib/python3.12/site-packages:/home/mandy/Delivery-Bot/build/robot_vision:/home/mandy/Delivery-Bot/install/robot_vision/lib/python3.12/site-packages:/home/mandy/Delivery-Bot/build/robot_navigation:/home/mandy/Delivery-Bot/install/robot_navigation/lib/python3.12/site-packages:/home/mandy/Delivery-Bot/install/robot_interfaces/lib/python3.12/site-packages:/home/mandy/Delivery-Bot/build/robot_description:/home/mandy/Delivery-Bot/install/robot_description/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/mandy/Delivery-Bot/install/robot_interfaces:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[25.855778] (-) TimerEvent: {}
+[25.957182] (-) TimerEvent: {}
+[26.057865] (-) TimerEvent: {}
+[26.158480] (-) TimerEvent: {}
+[26.259188] (-) TimerEvent: {}
+[26.359953] (-) TimerEvent: {}
+[26.460616] (-) TimerEvent: {}
+[26.561192] (-) TimerEvent: {}
+[26.661812] (-) TimerEvent: {}
+[26.762405] (-) TimerEvent: {}
+[26.863021] (-) TimerEvent: {}
+[26.963652] (-) TimerEvent: {}
+[27.064271] (-) TimerEvent: {}
+[27.164877] (-) TimerEvent: {}
+[27.265468] (-) TimerEvent: {}
+[27.366138] (-) TimerEvent: {}
+[27.467108] (-) TimerEvent: {}
+[27.545691] (robot_bringup) StdoutLine: {'line': b'running develop\n'}
+[27.567265] (-) TimerEvent: {}
+[27.667879] (-) TimerEvent: {}
+[27.768478] (-) TimerEvent: {}
+[27.869122] (-) TimerEvent: {}
+[27.969807] (-) TimerEvent: {}
+[28.070407] (-) TimerEvent: {}
+[28.171114] (-) TimerEvent: {}
+[28.271737] (-) TimerEvent: {}
+[28.372324] (-) TimerEvent: {}
+[28.472951] (-) TimerEvent: {}
+[28.573575] (-) TimerEvent: {}
+[28.674206] (-) TimerEvent: {}
+[28.700785] (robot_bringup) StdoutLine: {'line': b'running egg_info\n'}
+[28.774373] (-) TimerEvent: {}
+[28.795499] (robot_bringup) StdoutLine: {'line': b'writing robot_bringup.egg-info/PKG-INFO\n'}
+[28.796763] (robot_bringup) StdoutLine: {'line': b'writing dependency_links to robot_bringup.egg-info/dependency_links.txt\n'}
+[28.798077] (robot_bringup) StdoutLine: {'line': b'writing requirements to robot_bringup.egg-info/requires.txt\n'}
+[28.798840] (robot_bringup) StdoutLine: {'line': b'writing top-level names to robot_bringup.egg-info/top_level.txt\n'}
+[28.874582] (-) TimerEvent: {}
+[28.975228] (-) TimerEvent: {}
+[28.992819] (robot_bringup) StdoutLine: {'line': b"reading manifest file 'robot_bringup.egg-info/SOURCES.txt'\n"}
+[28.996633] (robot_bringup) StdoutLine: {'line': b"writing manifest file 'robot_bringup.egg-info/SOURCES.txt'\n"}
+[29.075398] (-) TimerEvent: {}
+[29.096223] (robot_bringup) StdoutLine: {'line': b'running build_ext\n'}
+[29.097101] (robot_bringup) StdoutLine: {'line': b'Creating /home/mandy/Delivery-Bot/install/robot_bringup/lib/python3.12/site-packages/robot-bringup.egg-link (link to .)\n'}
+[29.099485] (robot_bringup) StdoutLine: {'line': b'\n'}
+[29.100621] (robot_bringup) StdoutLine: {'line': b'Installed /home/mandy/Delivery-Bot/build/robot_bringup\n'}
+[29.101154] (robot_bringup) StdoutLine: {'line': b'running symlink_data\n'}
+[29.175786] (-) TimerEvent: {}
+[29.261690] (robot_bringup) CommandEnded: {'returncode': 0}
+[29.276461] (-) TimerEvent: {}
+[29.304671] (robot_bringup) JobEnded: {'identifier': 'robot_bringup', 'rc': 0}
+[29.308040] (-) EventReactorShutdown: {}

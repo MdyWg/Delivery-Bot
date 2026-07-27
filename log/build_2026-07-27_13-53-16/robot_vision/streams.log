@@ -1,0 +1,17 @@
+[12.705s] Invoking command in '/home/mandy/Delivery-Bot/build/robot_vision': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/mandy/Delivery-Bot/build/robot_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mandy/Delivery-Bot/install/robot_vision/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/mandy/Delivery-Bot/build/robot_vision/build --no-deps symlink_data
+[15.425s] running develop
+[17.209s] running egg_info
+[17.394s] writing robot_vision.egg-info/PKG-INFO
+[17.396s] writing dependency_links to robot_vision.egg-info/dependency_links.txt
+[17.397s] writing entry points to robot_vision.egg-info/entry_points.txt
+[17.397s] writing requirements to robot_vision.egg-info/requires.txt
+[17.404s] writing top-level names to robot_vision.egg-info/top_level.txt
+[17.872s] reading manifest file 'robot_vision.egg-info/SOURCES.txt'
+[17.882s] writing manifest file 'robot_vision.egg-info/SOURCES.txt'
+[18.040s] running build_ext
+[18.042s] Creating /home/mandy/Delivery-Bot/install/robot_vision/lib/python3.12/site-packages/robot-vision.egg-link (link to .)
+[18.044s] Installing arducam_tof script to /home/mandy/Delivery-Bot/install/robot_vision/lib/robot_vision
+[18.046s] 
+[18.048s] Installed /home/mandy/Delivery-Bot/build/robot_vision
+[18.050s] running symlink_data
+[18.240s] Invoked command in '/home/mandy/Delivery-Bot/build/robot_vision' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/mandy/Delivery-Bot/build/robot_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mandy/Delivery-Bot/install/robot_vision/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/mandy/Delivery-Bot/build/robot_vision/build --no-deps symlink_data

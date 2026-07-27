@@ -1,1 +1,0 @@
-/home/mandy/Delivery-Bot/build/robot_interfaces/rosidl_typesupport_fastrtps_cpp/robot_interfaces/msg/detail/encoder_speed__rosidl_typesupport_fastrtps_cpp.hpp

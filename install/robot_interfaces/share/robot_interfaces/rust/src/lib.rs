@@ -1,1 +1,0 @@
-/home/mandy/Delivery-Bot/build/robot_interfaces/rosidl_generator_rs/robot_interfaces/rust/src/lib.rs

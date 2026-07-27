@@ -30,8 +30,6 @@ class SerialComm(Node):
             try:
                 line = self.ser.readline().decode('utf-8').strip()
 
-                if not line:
-                    continue
 
                 # firmware format: "PWM left,PWM right,left_count,right_count,left_speed,right_speed"
                 # left_speed/right_speed are encoder counts per 100ms.

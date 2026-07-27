@@ -33,9 +33,14 @@ class ArducamToFNode(Node):
         threading.Thread(target=self.cam_loop, daemon=True).start()
 
     def cam_loop(self):
+        frame_count = 0
         while rclpy.ok():
             frame = self.cam.requestFrame(2000)
             if frame is not None and isinstance(frame, ac.DepthData):
+                frame_count += 1
+                if frame_count % 3 != 0:
+                    self.cam.releaseFrame(frame)
+                    continue
                 depth_buf = frame.depth_data
                 confidence_buf = frame.confidence_data
 

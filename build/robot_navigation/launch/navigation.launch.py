@@ -1,1 +1,0 @@
-/home/mandy/Delivery-Bot/src/robot_navigation/launch/navigation.launch.py

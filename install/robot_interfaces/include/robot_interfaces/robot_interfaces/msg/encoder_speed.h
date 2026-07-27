@@ -1,1 +1,0 @@
-/home/mandy/Delivery-Bot/build/robot_interfaces/rosidl_generator_c/robot_interfaces/msg/encoder_speed.h

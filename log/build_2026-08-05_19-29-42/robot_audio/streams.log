@@ -1,0 +1,41 @@
+[5.020s] Invoking command in '/home/mandy/Delivery-Bot/src/robot_audio': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/mandy/Delivery-Bot/build/robot_audio/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mandy/Delivery-Bot/install/robot_audio/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_audio build --build-base /home/mandy/Delivery-Bot/build/robot_audio/build install --record /home/mandy/Delivery-Bot/build/robot_audio/install.log --install-scripts $base/lib/robot_audio --single-version-externally-managed install_data
+[6.273s] running egg_info
+[6.275s] creating ../../build/robot_audio/robot_audio.egg-info
+[6.370s] writing ../../build/robot_audio/robot_audio.egg-info/PKG-INFO
+[6.371s] writing dependency_links to ../../build/robot_audio/robot_audio.egg-info/dependency_links.txt
+[6.373s] writing entry points to ../../build/robot_audio/robot_audio.egg-info/entry_points.txt
+[6.373s] writing requirements to ../../build/robot_audio/robot_audio.egg-info/requires.txt
+[6.374s] writing top-level names to ../../build/robot_audio/robot_audio.egg-info/top_level.txt
+[6.375s] writing manifest file '../../build/robot_audio/robot_audio.egg-info/SOURCES.txt'
+[6.626s] reading manifest file '../../build/robot_audio/robot_audio.egg-info/SOURCES.txt'
+[6.628s] writing manifest file '../../build/robot_audio/robot_audio.egg-info/SOURCES.txt'
+[6.629s] running build
+[6.629s] running build_py
+[6.630s] creating /home/mandy/Delivery-Bot/build/robot_audio/build
+[6.631s] creating /home/mandy/Delivery-Bot/build/robot_audio/build/lib
+[6.631s] creating /home/mandy/Delivery-Bot/build/robot_audio/build/lib/robot_audio
+[6.632s] copying robot_audio/audio_process.py -> /home/mandy/Delivery-Bot/build/robot_audio/build/lib/robot_audio
+[6.633s] copying robot_audio/__init__.py -> /home/mandy/Delivery-Bot/build/robot_audio/build/lib/robot_audio
+[6.633s] copying robot_audio/mic_audio.py -> /home/mandy/Delivery-Bot/build/robot_audio/build/lib/robot_audio
+[6.635s] running install
+[6.664s] running install_lib
+[6.771s] creating /home/mandy/Delivery-Bot/install/robot_audio/lib/python3.12/site-packages/robot_audio
+[6.772s] copying /home/mandy/Delivery-Bot/build/robot_audio/build/lib/robot_audio/audio_process.py -> /home/mandy/Delivery-Bot/install/robot_audio/lib/python3.12/site-packages/robot_audio
+[6.773s] copying /home/mandy/Delivery-Bot/build/robot_audio/build/lib/robot_audio/__init__.py -> /home/mandy/Delivery-Bot/install/robot_audio/lib/python3.12/site-packages/robot_audio
+[6.774s] copying /home/mandy/Delivery-Bot/build/robot_audio/build/lib/robot_audio/mic_audio.py -> /home/mandy/Delivery-Bot/install/robot_audio/lib/python3.12/site-packages/robot_audio
+[6.776s] byte-compiling /home/mandy/Delivery-Bot/install/robot_audio/lib/python3.12/site-packages/robot_audio/audio_process.py to audio_process.cpython-312.pyc
+[6.779s] byte-compiling /home/mandy/Delivery-Bot/install/robot_audio/lib/python3.12/site-packages/robot_audio/__init__.py to __init__.cpython-312.pyc
+[6.781s] byte-compiling /home/mandy/Delivery-Bot/install/robot_audio/lib/python3.12/site-packages/robot_audio/mic_audio.py to mic_audio.cpython-312.pyc
+[6.783s] running install_data
+[6.784s] creating /home/mandy/Delivery-Bot/install/robot_audio/share/ament_index
+[6.785s] creating /home/mandy/Delivery-Bot/install/robot_audio/share/ament_index/resource_index
+[6.785s] creating /home/mandy/Delivery-Bot/install/robot_audio/share/ament_index/resource_index/packages
+[6.786s] copying resource/robot_audio -> /home/mandy/Delivery-Bot/install/robot_audio/share/ament_index/resource_index/packages
+[6.786s] copying package.xml -> /home/mandy/Delivery-Bot/install/robot_audio/share/robot_audio
+[6.787s] running install_egg_info
+[6.884s] Copying ../../build/robot_audio/robot_audio.egg-info to /home/mandy/Delivery-Bot/install/robot_audio/lib/python3.12/site-packages/robot_audio-0.0.0-py3.12.egg-info
+[6.890s] running install_scripts
+[7.602s] Installing audio_process script to /home/mandy/Delivery-Bot/install/robot_audio/lib/robot_audio
+[7.603s] Installing mic_audio script to /home/mandy/Delivery-Bot/install/robot_audio/lib/robot_audio
+[7.605s] writing list of installed files to '/home/mandy/Delivery-Bot/build/robot_audio/install.log'
+[7.751s] Invoked command in '/home/mandy/Delivery-Bot/src/robot_audio' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/mandy/Delivery-Bot/build/robot_audio/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mandy/Delivery-Bot/install/robot_audio/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_audio build --build-base /home/mandy/Delivery-Bot/build/robot_audio/build install --record /home/mandy/Delivery-Bot/build/robot_audio/install.log --install-scripts $base/lib/robot_audio --single-version-externally-managed install_data

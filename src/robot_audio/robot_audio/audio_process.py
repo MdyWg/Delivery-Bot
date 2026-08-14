@@ -14,7 +14,8 @@ class SpeechRecognition(Node):
         wav_bytes = b''.join(msg.data)
         audio = sr.AudioData(wav_bytes, sample_rate=16000, sample_width=2)
         try:
-            text = self.r.recognize_whisper(audio)
+            result = self.r.recognize_whisper(audio, model="small", show_dict=True, load_options={"device": "cuda"})
+            text = result['text']
             self.get_logger().info(f"Recognized speech: {text}")
             self.face_pub.publish(String(data=text))
         except sr.UnknownValueError:

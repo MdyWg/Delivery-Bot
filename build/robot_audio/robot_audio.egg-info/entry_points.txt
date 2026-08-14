@@ -1,3 +1,0 @@
-[console_scripts]
-audio_process = robot_audio.audio_process:main
-mic_audio = robot_audio.mic_audio:main

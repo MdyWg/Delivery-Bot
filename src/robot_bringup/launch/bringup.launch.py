@@ -15,6 +15,13 @@ def generate_launch_description():
     robot_navigation = FindPackageShare('robot_navigation')
     robot_vision = FindPackageShare('robot_vision')
 
+    mic = Node(
+        package='robot_audio',
+        executable='mic_audio',
+        name='mic_audio',
+        output='screen',
+    )
+
     camera = Node(
         package='robot_vision',
         executable='arducam_tof',
@@ -49,6 +56,7 @@ def generate_launch_description():
             default_value='false',
             description='Use simulation clock if true'
         ),
+        mic,
         camera,
         control,
         description,

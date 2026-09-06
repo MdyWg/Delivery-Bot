@@ -7,7 +7,7 @@ class SpeechRecognition(Node):
     def __init__(self):
         super().__init__('speech_recognition')
         self.speech_sub = self.create_subscription(ByteMultiArray, 'microphone/speech_audio', self.speech_callback, 10)
-        self.face_pub = self.create_publisher(String, 'speech/recognized_text', 10)
+        self.speech_pub = self.create_publisher(String, 'speech/recognized_text', 10)
         self.r = sr.Recognizer()
 
     def speech_callback(self, msg):
@@ -17,7 +17,7 @@ class SpeechRecognition(Node):
             result = self.r.recognize_whisper(audio, model="small", show_dict=True, load_options={"device": "cuda"})
             text = result['text']
             self.get_logger().info(f"Recognized speech: {text}")
-            self.face_pub.publish(String(data=text))
+            self.speech_pub.publish(String(data=text))
         except sr.UnknownValueError:
             self.get_logger().warn("Whisper could not understand audio")
         except sr.RequestError as e:

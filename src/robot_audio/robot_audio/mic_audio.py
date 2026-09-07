@@ -34,6 +34,11 @@ class MicrophoneNode(Node):
 
 def main(args=None):
     rclpy.init(args=args)
+    mic_pub.destroy_node()
+    rclpy.shutdown()
+
+
+    
     mic_pub = MicrophoneNode()
     rclpy.spin(mic_pub)
     mic_pub.destroy_node()

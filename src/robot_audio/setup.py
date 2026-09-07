@@ -26,6 +26,7 @@ setup(
         'console_scripts': [
             'mic_audio = robot_audio.mic_audio:main',
             'audio_process = robot_audio.audio_process:main',
+            'word_intent = robot_audio.word_intent:main', 
         ],
     },
 )

@@ -1,6 +1,7 @@
 import re
 import rclpy
 from rclpy.node import Node
+from std_msgs.msg import String
 
 class WordIntent(Node):
     def __init__(self):
@@ -21,6 +22,7 @@ class WordIntent(Node):
             return "farewell"
         elif "tired" in text or re.search(r"sleep\w+", text):
             return "tired"
+        return "idle"
 
 def main(args=None):
     rclpy.init(args=args)

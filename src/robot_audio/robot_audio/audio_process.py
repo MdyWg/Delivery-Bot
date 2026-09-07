@@ -1,4 +1,6 @@
 import speech_recognition as sr
+import whisper
+import numpy as np
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import ByteMultiArray, String
@@ -10,11 +12,15 @@ class SpeechRecognition(Node):
         self.speech_pub = self.create_publisher(String, 'speech/recognized_text', 10)
         self.r = sr.Recognizer()
 
+        self.model = whisper.load_model("small.en", device="cuda")
+        self.get_logger.info("whisper model loaded")
+
     def speech_callback(self, msg):
         wav_bytes = b''.join(msg.data)
         audio = sr.AudioData(wav_bytes, sample_rate=16000, sample_width=2)
         try:
-            result = self.r.recognize_whisper(audio, model="small", show_dict=True, load_options={"device": "cuda"})
+            audio_np = np.frombuffer(audio.get_raw_data(convert_rate=16000, convert_width=2), np.int16).astype(np.float32) / 32768.0
+            result = self.model.transcribe(audio_np, fp26=True)
             text = result['text']
             self.get_logger().info(f"Recognized speech: {text}")
             self.speech_pub.publish(String(data=text))

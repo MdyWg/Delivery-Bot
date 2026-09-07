@@ -19,4 +19,5 @@ class Expression(Node):
             return "sad"
         elif intent == "tired":
             return "tired"
+        return "idle"
 

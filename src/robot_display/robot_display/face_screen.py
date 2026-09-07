@@ -102,7 +102,7 @@ def silly():
 
 def main(args=None):
     rclpy.init(args=args)
-    expression = Expression()
+    expression_node = Expression()
 
     thread = threading.Thread(target=rclpy.spin, args=(expression_node), daemon=True)
     thread.start()
